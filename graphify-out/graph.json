@@ -1,0 +1,710 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "ai_features_group",
+        "label": "AI-Powered Features",
+        "nodes": [
+          "concept_youtube_summarizer",
+          "concept_ai_chat",
+          "concept_text_to_speech"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "app/pages/"
+      },
+      {
+        "id": "auth_flow",
+        "label": "Authentication Flow",
+        "nodes": [
+          "concept_supabase_auth",
+          "concept_dashboard_layout",
+          "concept_notes_management"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "app/pages/login.vue"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "nuxt.config.ts",
+      "file_type": "code",
+      "source_file": "nuxt.config.ts",
+      "source_location": "L1",
+      "id": "nuxt_config_ts",
+      "community": 7,
+      "norm_label": "nuxt.config.ts"
+    },
+    {
+      "label": "app.vue",
+      "file_type": "code",
+      "source_file": "app/app.vue",
+      "source_location": "L1",
+      "id": "app_app_vue",
+      "community": 8,
+      "norm_label": "app.vue"
+    },
+    {
+      "label": "AppFooter.vue",
+      "file_type": "code",
+      "source_file": "app/components/AppFooter.vue",
+      "source_location": "L1",
+      "id": "app_components_appfooter_vue",
+      "community": 9,
+      "norm_label": "appfooter.vue"
+    },
+    {
+      "label": "AppHeader.vue",
+      "file_type": "code",
+      "source_file": "app/components/AppHeader.vue",
+      "source_location": "L1",
+      "id": "app_components_appheader_vue",
+      "community": 10,
+      "norm_label": "appheader.vue"
+    },
+    {
+      "label": "AppSidebar.vue",
+      "file_type": "code",
+      "source_file": "app/components/AppSidebar.vue",
+      "source_location": "L1",
+      "id": "app_components_appsidebar_vue",
+      "community": 3,
+      "norm_label": "appsidebar.vue"
+    },
+    {
+      "label": "toggleCollapse()",
+      "file_type": "code",
+      "source_file": "app/components/AppSidebar.vue",
+      "source_location": "L105",
+      "id": "components_appsidebar_togglecollapse",
+      "community": 3,
+      "norm_label": "togglecollapse()"
+    },
+    {
+      "label": "CarouselBanner.vue",
+      "file_type": "code",
+      "source_file": "app/components/CarouselBanner.vue",
+      "source_location": "L1",
+      "id": "app_components_carouselbanner_vue",
+      "community": 11,
+      "norm_label": "carouselbanner.vue"
+    },
+    {
+      "label": "DashboardTopBar.vue",
+      "file_type": "code",
+      "source_file": "app/components/DashboardTopBar.vue",
+      "source_location": "L1",
+      "id": "app_components_dashboardtopbar_vue",
+      "community": 12,
+      "norm_label": "dashboardtopbar.vue"
+    },
+    {
+      "label": "QuotaDisplay.vue",
+      "file_type": "code",
+      "source_file": "app/components/QuotaDisplay.vue",
+      "source_location": "L1",
+      "id": "app_components_quotadisplay_vue",
+      "community": 13,
+      "norm_label": "quotadisplay.vue"
+    },
+    {
+      "label": "SidebarItem.vue",
+      "file_type": "code",
+      "source_file": "app/components/SidebarItem.vue",
+      "source_location": "L1",
+      "id": "app_components_sidebaritem_vue",
+      "community": 14,
+      "norm_label": "sidebaritem.vue"
+    },
+    {
+      "label": "ToolSubNav.vue",
+      "file_type": "code",
+      "source_file": "app/components/ToolSubNav.vue",
+      "source_location": "L1",
+      "id": "app_components_toolsubnav_vue",
+      "community": 5,
+      "norm_label": "toolsubnav.vue"
+    },
+    {
+      "label": "isActiveTab()",
+      "file_type": "code",
+      "source_file": "app/components/ToolSubNav.vue",
+      "source_location": "L92",
+      "id": "components_toolsubnav_isactivetab",
+      "community": 5,
+      "norm_label": "isactivetab()"
+    },
+    {
+      "label": "useNotes.ts",
+      "file_type": "code",
+      "source_file": "app/composables/useNotes.ts",
+      "source_location": "L1",
+      "id": "app_composables_usenotes_ts",
+      "community": 6,
+      "norm_label": "usenotes.ts"
+    },
+    {
+      "label": "useNotes()",
+      "file_type": "code",
+      "source_file": "app/composables/useNotes.ts",
+      "source_location": "L3",
+      "id": "composables_usenotes_usenotes",
+      "community": 6,
+      "norm_label": "usenotes()"
+    },
+    {
+      "label": "useProfile.ts",
+      "file_type": "code",
+      "source_file": "app/composables/useProfile.ts",
+      "source_location": "L1",
+      "id": "app_composables_useprofile_ts",
+      "community": 4,
+      "norm_label": "useprofile.ts"
+    },
+    {
+      "label": "useProfile()",
+      "file_type": "code",
+      "source_file": "app/composables/useProfile.ts",
+      "source_location": "L3",
+      "id": "composables_useprofile_useprofile",
+      "community": 4,
+      "norm_label": "useprofile()"
+    },
+    {
+      "label": "dashboard.vue",
+      "file_type": "code",
+      "source_file": "app/layouts/dashboard.vue",
+      "source_location": "L1",
+      "id": "app_layouts_dashboard_vue",
+      "community": 15,
+      "norm_label": "dashboard.vue"
+    },
+    {
+      "label": "default.vue",
+      "file_type": "code",
+      "source_file": "app/layouts/default.vue",
+      "source_location": "L1",
+      "id": "app_layouts_default_vue",
+      "community": 16,
+      "norm_label": "default.vue"
+    },
+    {
+      "label": "ai-chat.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-chat.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_chat_vue",
+      "community": 17,
+      "norm_label": "ai-chat.vue"
+    },
+    {
+      "label": "confirm.vue",
+      "file_type": "code",
+      "source_file": "app/pages/confirm.vue",
+      "source_location": "L1",
+      "id": "app_pages_confirm_vue",
+      "community": 18,
+      "norm_label": "confirm.vue"
+    },
+    {
+      "label": "dashboard.vue",
+      "file_type": "code",
+      "source_file": "app/pages/dashboard.vue",
+      "source_location": "L1",
+      "id": "app_pages_dashboard_vue",
+      "community": 19,
+      "norm_label": "dashboard.vue"
+    },
+    {
+      "label": "index.vue",
+      "file_type": "code",
+      "source_file": "app/pages/index.vue",
+      "source_location": "L1",
+      "id": "app_pages_index_vue",
+      "community": 20,
+      "norm_label": "index.vue"
+    },
+    {
+      "label": "login.vue",
+      "file_type": "code",
+      "source_file": "app/pages/login.vue",
+      "source_location": "L1",
+      "id": "app_pages_login_vue",
+      "community": 21,
+      "norm_label": "login.vue"
+    },
+    {
+      "label": "notes.vue",
+      "file_type": "code",
+      "source_file": "app/pages/notes.vue",
+      "source_location": "L1",
+      "id": "app_pages_notes_vue",
+      "community": 22,
+      "norm_label": "notes.vue"
+    },
+    {
+      "label": "pricing.vue",
+      "file_type": "code",
+      "source_file": "app/pages/pricing.vue",
+      "source_location": "L1",
+      "id": "app_pages_pricing_vue",
+      "community": 23,
+      "norm_label": "pricing.vue"
+    },
+    {
+      "label": "signup.vue",
+      "file_type": "code",
+      "source_file": "app/pages/signup.vue",
+      "source_location": "L1",
+      "id": "app_pages_signup_vue",
+      "community": 24,
+      "norm_label": "signup.vue"
+    },
+    {
+      "label": "text-to-speech.vue",
+      "file_type": "code",
+      "source_file": "app/pages/text-to-speech.vue",
+      "source_location": "L1",
+      "id": "app_pages_text_to_speech_vue",
+      "community": 25,
+      "norm_label": "text-to-speech.vue"
+    },
+    {
+      "label": "youtube-video-summarizer.vue",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L1",
+      "id": "app_pages_youtube_video_summarizer_vue",
+      "community": 26,
+      "norm_label": "youtube-video-summarizer.vue"
+    },
+    {
+      "label": "database.types.ts",
+      "file_type": "code",
+      "source_file": "app/types/database.types.ts",
+      "source_location": "L1",
+      "id": "app_types_database_types_ts",
+      "community": 27,
+      "norm_label": "database.types.ts"
+    },
+    {
+      "label": "chat.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/chat.post.ts",
+      "source_location": "L1",
+      "id": "server_api_chat_post_ts",
+      "community": 28,
+      "norm_label": "chat.post.ts"
+    },
+    {
+      "label": "summarize.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/summarize.post.ts",
+      "source_location": "L1",
+      "id": "server_api_summarize_post_ts",
+      "community": 29,
+      "norm_label": "summarize.post.ts"
+    },
+    {
+      "label": "tts.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/tts.post.ts",
+      "source_location": "L1",
+      "id": "server_api_tts_post_ts",
+      "community": 30,
+      "norm_label": "tts.post.ts"
+    },
+    {
+      "label": "Nuxt Minimal Starter",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_nuxt_starter",
+      "community": 2,
+      "norm_label": "nuxt minimal starter"
+    },
+    {
+      "label": "Nuxt 3 Framework",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": "https://nuxt.com",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_nuxt_framework",
+      "community": 2,
+      "norm_label": "nuxt 3 framework"
+    },
+    {
+      "label": "Supabase Authentication",
+      "file_type": "rationale",
+      "source_file": "app/pages/login.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_supabase_auth",
+      "community": 0,
+      "norm_label": "supabase authentication"
+    },
+    {
+      "label": "YouTube Video Summarizer",
+      "file_type": "rationale",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_youtube_summarizer",
+      "community": 1,
+      "norm_label": "youtube video summarizer"
+    },
+    {
+      "label": "AI Chat Feature",
+      "file_type": "rationale",
+      "source_file": "app/pages/ai-chat.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_ai_chat",
+      "community": 1,
+      "norm_label": "ai chat feature"
+    },
+    {
+      "label": "Text-to-Speech Feature",
+      "file_type": "rationale",
+      "source_file": "app/pages/text-to-speech.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_text_to_speech",
+      "community": 1,
+      "norm_label": "text-to-speech feature"
+    },
+    {
+      "label": "Notes Management",
+      "file_type": "rationale",
+      "source_file": "app/pages/notes.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_notes_management",
+      "community": 0,
+      "norm_label": "notes management"
+    },
+    {
+      "label": "Pricing & Subscription",
+      "file_type": "rationale",
+      "source_file": "app/pages/pricing.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_pricing_model",
+      "community": 0,
+      "norm_label": "pricing & subscription"
+    },
+    {
+      "label": "Dashboard Layout System",
+      "file_type": "rationale",
+      "source_file": "app/layouts/dashboard.vue",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_dashboard_layout",
+      "community": 0,
+      "norm_label": "dashboard layout system"
+    },
+    {
+      "label": "AI Chat Live Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-ai-chat-live.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_ai_chat_live",
+      "community": 1,
+      "norm_label": "ai chat live screenshot"
+    },
+    {
+      "label": "Homepage Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-homepage-screenshot.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_homepage",
+      "community": 2,
+      "norm_label": "homepage screenshot"
+    },
+    {
+      "label": "Pricing Page Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-pricing.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_pricing",
+      "community": 0,
+      "norm_label": "pricing page screenshot"
+    },
+    {
+      "label": "YouTube Summarizer Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-youtube-summarizer.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_youtube_summarizer",
+      "community": 1,
+      "norm_label": "youtube summarizer screenshot"
+    },
+    {
+      "label": "Notes Page Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-my-notes.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_notes",
+      "community": 0,
+      "norm_label": "notes page screenshot"
+    },
+    {
+      "label": "Text-to-Speech Screenshot",
+      "file_type": "image",
+      "source_file": "notegpt-tts-live.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "img_tts",
+      "community": 1,
+      "norm_label": "text-to-speech screenshot"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/AppSidebar.vue",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "app_components_appsidebar_vue",
+      "target": "components_appsidebar_togglecollapse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/components/ToolSubNav.vue",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "app_components_toolsubnav_vue",
+      "target": "components_toolsubnav_isactivetab",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/composables/useNotes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_composables_usenotes_ts",
+      "target": "composables_usenotes_usenotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/composables/useProfile.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "app_composables_useprofile_ts",
+      "target": "composables_useprofile_useprofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "readme_nuxt_starter",
+      "target": "concept_nuxt_framework"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "notegpt-homepage-screenshot.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_homepage",
+      "target": "concept_nuxt_framework"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "app/pages/login.vue",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_supabase_auth",
+      "target": "concept_notes_management"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_youtube_summarizer",
+      "target": "concept_ai_chat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notegpt-youtube-summarizer.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_youtube_summarizer",
+      "target": "concept_youtube_summarizer"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "app/pages/ai-chat.vue",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_ai_chat",
+      "target": "concept_text_to_speech"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notegpt-ai-chat-live.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_ai_chat_live",
+      "target": "concept_ai_chat"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notegpt-tts-live.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_tts",
+      "target": "concept_text_to_speech"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/pages/pricing.vue",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_pricing_model",
+      "target": "concept_notes_management"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "app/layouts/dashboard.vue",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_dashboard_layout",
+      "target": "concept_notes_management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notegpt-my-notes.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_notes",
+      "target": "concept_notes_management"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "notegpt-pricing.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "img_pricing",
+      "target": "concept_pricing_model"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ai_features_group",
+      "label": "AI-Powered Features",
+      "nodes": [
+        "concept_youtube_summarizer",
+        "concept_ai_chat",
+        "concept_text_to_speech"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "app/pages/"
+    },
+    {
+      "id": "auth_flow",
+      "label": "Authentication Flow",
+      "nodes": [
+        "concept_supabase_auth",
+        "concept_dashboard_layout",
+        "concept_notes_management"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/pages/login.vue"
+    }
+  ],
+  "built_at_commit": "0d2ce740b184289baf745bda9684216a019fdbb2"
+}

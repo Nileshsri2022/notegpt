@@ -1,32 +1,23 @@
 <template>
   <div>
     <NuxtLayout name="dashboard">
+      <!-- Tool Sub-Navigation Bar -->
+      <template #header>
+        <ToolSubNav
+          category="YouTube Summarizer"
+          category-icon="heroicons:play-circle"
+          v-model="activeResultTab"
+          :tabs="resultTabs"
+          :basic-remaining="15"
+          :premium-remaining="0"
+        />
+      </template>
+
       <div class="max-w-4xl mx-auto">
         <!-- Tool Header -->
         <div class="mb-6">
-          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
-            <span>AI YouTube</span>
-            <Icon name="heroicons:chevron-right" class="w-3 h-3" />
-            <span class="text-gray-900">YouTube Summarizer</span>
-          </div>
           <h1 class="text-2xl font-bold text-gray-900">Free YouTube Video Summarizer</h1>
           <p class="text-gray-600 mt-1">Paste a YouTube URL to get an AI-powered summary with key points.</p>
-        </div>
-
-        <!-- Quota Display -->
-        <div class="flex items-center gap-4 mb-6 text-sm">
-          <div class="flex items-center gap-1">
-            <span class="font-semibold text-gray-900">15</span>
-            <span class="text-gray-500">basic</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <span class="font-semibold text-gray-900">0</span>
-            <span class="text-gray-500">premium</span>
-          </div>
-          <NuxtLink to="/pricing" class="text-primary-500 text-xs font-medium hover:underline flex items-center gap-1">
-            <Icon name="heroicons:rocket-launch" class="w-3 h-3" />
-            Upgrade
-          </NuxtLink>
         </div>
 
         <!-- Input Type Tabs -->
@@ -65,11 +56,6 @@
 
         <!-- Results -->
         <div v-if="summary" class="bg-white rounded-xl border border-gray-200 p-6">
-          <div class="flex items-center gap-2 mb-4">
-            <button class="px-3 py-1 rounded text-sm font-medium bg-primary-50 text-primary-600">Summary</button>
-            <button class="px-3 py-1 rounded text-sm font-medium text-gray-500 hover:bg-gray-50">Key Points</button>
-            <button class="px-3 py-1 rounded text-sm font-medium text-gray-500 hover:bg-gray-50">Transcript</button>
-          </div>
           <div class="prose prose-sm max-w-none">
             <p>{{ summary }}</p>
           </div>
@@ -107,6 +93,14 @@ const videoUrl = ref('')
 const summary = ref('')
 const loading = ref(false)
 const activeInput = ref('youtube')
+const activeResultTab = ref('summary')
+
+const resultTabs = [
+  { label: 'Summary', value: 'summary' },
+  { label: 'Transcript', value: 'transcript' },
+  { label: 'Notes', value: 'notes' },
+  { label: 'Mind Map', value: 'mindmap' },
+]
 
 const inputTypes = [
   { id: 'youtube', label: 'YouTube', icon: 'heroicons:play-circle' },

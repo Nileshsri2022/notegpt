@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    {"id": "readme_nuxt_starter", "label": "Nuxt Minimal Starter", "file_type": "document", "source_file": "README.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_nuxt_framework", "label": "Nuxt 3 Framework", "file_type": "rationale", "source_file": "README.md", "source_location": null, "source_url": "https://nuxt.com", "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_supabase_auth", "label": "Supabase Authentication", "file_type": "rationale", "source_file": "app/pages/login.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_youtube_summarizer", "label": "YouTube Video Summarizer", "file_type": "rationale", "source_file": "app/pages/youtube-video-summarizer.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_ai_chat", "label": "AI Chat Feature", "file_type": "rationale", "source_file": "app/pages/ai-chat.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_text_to_speech", "label": "Text-to-Speech Feature", "file_type": "rationale", "source_file": "app/pages/text-to-speech.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_notes_management", "label": "Notes Management", "file_type": "rationale", "source_file": "app/pages/notes.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_pricing_model", "label": "Pricing & Subscription", "file_type": "rationale", "source_file": "app/pages/pricing.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "concept_dashboard_layout", "label": "Dashboard Layout System", "file_type": "rationale", "source_file": "app/layouts/dashboard.vue", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_ai_chat_live", "label": "AI Chat Live Screenshot", "file_type": "image", "source_file": "notegpt-ai-chat-live.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_homepage", "label": "Homepage Screenshot", "file_type": "image", "source_file": "notegpt-homepage-screenshot.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_pricing", "label": "Pricing Page Screenshot", "file_type": "image", "source_file": "notegpt-pricing.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_youtube_summarizer", "label": "YouTube Summarizer Screenshot", "file_type": "image", "source_file": "notegpt-youtube-summarizer.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_notes", "label": "Notes Page Screenshot", "file_type": "image", "source_file": "notegpt-my-notes.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null},
+    {"id": "img_tts", "label": "Text-to-Speech Screenshot", "file_type": "image", "source_file": "notegpt-tts-live.png", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}
+  ],
+  "edges": [
+    {"source": "readme_nuxt_starter", "target": "concept_nuxt_framework", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "README.md", "source_location": null, "weight": 1.0},
+    {"source": "concept_supabase_auth", "target": "concept_notes_management", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "app/pages/login.vue", "source_location": null, "weight": 1.0},
+    {"source": "concept_youtube_summarizer", "target": "concept_ai_chat", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.75, "source_file": "app/pages/youtube-video-summarizer.vue", "source_location": null, "weight": 1.0},
+    {"source": "concept_ai_chat", "target": "concept_text_to_speech", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.7, "source_file": "app/pages/ai-chat.vue", "source_location": null, "weight": 1.0},
+    {"source": "concept_pricing_model", "target": "concept_notes_management", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "app/pages/pricing.vue", "source_location": null, "weight": 1.0},
+    {"source": "concept_dashboard_layout", "target": "concept_notes_management", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.9, "source_file": "app/layouts/dashboard.vue", "source_location": null, "weight": 1.0},
+    {"source": "img_ai_chat_live", "target": "concept_ai_chat", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "notegpt-ai-chat-live.png", "source_location": null, "weight": 1.0},
+    {"source": "img_homepage", "target": "concept_nuxt_framework", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "notegpt-homepage-screenshot.png", "source_location": null, "weight": 1.0},
+    {"source": "img_pricing", "target": "concept_pricing_model", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "notegpt-pricing.png", "source_location": null, "weight": 1.0},
+    {"source": "img_youtube_summarizer", "target": "concept_youtube_summarizer", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "notegpt-youtube-summarizer.png", "source_location": null, "weight": 1.0},
+    {"source": "img_notes", "target": "concept_notes_management", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "notegpt-my-notes.png", "source_location": null, "weight": 1.0},
+    {"source": "img_tts", "target": "concept_text_to_speech", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "notegpt-tts-live.png", "source_location": null, "weight": 1.0}
+  ],
+  "hyperedges": [
+    {"id": "ai_features_group", "label": "AI-Powered Features", "nodes": ["concept_youtube_summarizer", "concept_ai_chat", "concept_text_to_speech"], "relation": "participate_in", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "app/pages/"},
+    {"id": "auth_flow", "label": "Authentication Flow", "nodes": ["concept_supabase_auth", "concept_dashboard_layout", "concept_notes_management"], "relation": "participate_in", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "app/pages/login.vue"}
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,205 +1,86 @@
-# NoteGPT Clone — Requirements Specification
+# Requirements Document
 
-## Overview
-Build a pixel-perfect clone of https://notegpt.io — an AI-powered learning assistant SaaS with 80M+ users. The clone must replicate the exact UI/UX, feature set, and functionality using Nuxt 4 + Tailwind CSS v4 + Nuxt UI.
+## Introduction
+Build a pixel-perfect clone of https://notegpt.io — an AI-powered learning assistant SaaS with 80M+ users. The clone must replicate the exact UI/UX, feature set, and functionality using Nuxt 4 + Tailwind CSS v4 + Nuxt UI, backed by Supabase, ElevenLabs, OpenRouter, and Stripe.
 
-## Design System (Verified via Firecrawl Branding Extraction)
+## Glossary
+- **NoteGPT**: The target application being cloned (https://notegpt.io)
+- **Basic Quotas**: Free-tier usage credits for standard AI tools
+- **Premium Credits**: Paid-tier usage credits for advanced AI models and features
+- **OpenRouter**: API gateway providing access to multiple AI models (GPT-5, Gemini, Claude, DeepSeek)
+- **ElevenLabs**: AI voice synthesis platform used for Text-to-Speech features
+- **RLS**: Row Level Security — Supabase/Postgres feature ensuring users can only access their own data
 
-### Colors
-- Primary: `#2E83FB` (buttons, links, brand accent)
-- Secondary: `#64748B` (muted text)
-- Text Primary: `#111827` (headings, body)
-- Background: `#FFFFFF`
-- Theme Color: `#2E83FB`
-- Input Background: `#F7F7F7`
-- Input Text: `#0F172A`
+## Requirements
 
-### Typography
-- Font Family: Inter, sans-serif
-- H1: 48px, Bold
-- Body: 18px, Normal (400)
-- Mono: ui-monospace, SFMono-Regular
+### Design System
+- REQ-1: Primary color `#2E83FB` for buttons, links, and brand accent
+- REQ-2: Font family Inter (sans-serif) for all text
+- REQ-3: H1 at 48px Bold, body at 18px Normal
+- REQ-4: Border radius 10px for cards, 8px for inputs
+- REQ-5: Input background `#F7F7F7`, text color `#0F172A`
+- REQ-6: Container max-width 80rem (1280px)
+- REQ-7: Base spacing unit 4px (Tailwind default)
 
-### Spacing & Borders
-- Base unit: 4px
-- Border radius (cards): 10px
-- Border radius (inputs): 8px
-- Container max-width: 80rem (1280px)
+### Layouts
+- REQ-8: Public layout with sticky header (logo, nav, login) and footer (links, social)
+- REQ-9: Dashboard layout with collapsible left sidebar (56px collapsed / 268px open)
+- REQ-10: Tool page layout with sub-navigation bar (category, sub-tabs, quota display)
 
-### Logo
-- URL: `https://cdn.notegpt.io/notegpt/static/tario_image/home/logo_with_notegpt.webp`
-- Favicon: `https://cdn.notegpt.io/notegpt/static/logo/NoteGPT_logo_blue.png`
+### Authentication
+- REQ-11: Google OAuth sign-in via Supabase Auth
+- REQ-12: Email/password signup and login
+- REQ-13: Auto-create user profile on signup (trigger on auth.users insert)
+- REQ-14: Session persistence across page reloads
+- REQ-15: Protected routes redirect unauthenticated users to /login
 
----
+### Pages
+- REQ-16: Homepage (logged out) with hero, tool tabs, testimonials, pricing preview, FAQ
+- REQ-17: Dashboard (logged in) with greeting, search, tool tabs, carousel banners
+- REQ-18: Pricing page with 4 billing tabs (Annually, Monthly, Education, SaveTogether)
+- REQ-19: YouTube Video Summarizer with URL input, input type tabs, results area
+- REQ-20: AI Chat with multi-model selector, message bubbles, conversation history
+- REQ-21: Text-to-Speech with voice selector, settings sliders, audio player
+- REQ-22: My Notes with folder management, search, type filter, sort, CRUD
+- REQ-23: Login and Signup pages with Google OAuth and email form
+- REQ-24: At least 15 AI tool pages (summarizers, transcribers, voices, images, study)
 
-## Layouts (Verified via Playwright Screenshots)
+### AI Features
+- REQ-25: YouTube transcript extraction via YouTube Data API
+- REQ-26: AI summarization via OpenRouter (multi-model)
+- REQ-27: AI chat with model switching (GPT-5, Gemini, Claude, DeepSeek)
+- REQ-28: Text-to-Speech via ElevenLabs with voice selection and settings
+- REQ-29: AI content detection
+- REQ-30: AI image generation
 
-### Layout 1: Public (Logged Out)
-- Sticky header: Logo + Nav (Products dropdown, Pricing) + Language selector + Login button
-- Full-width content area
-- Footer: Logo + tagline + social links + 4-column link grid
+### Quota System
+- REQ-31: Free tier: 15 basic quotas, 0 premium credits
+- REQ-32: Basic plan: 200 basic quotas, 0 premium credits
+- REQ-33: Pro plan: 1,000 basic quotas, 100 premium credits
+- REQ-34: Unlimited plan: unlimited basic, 2,800 premium credits
+- REQ-35: Display remaining quota in tool pages
+- REQ-36: Block tool usage when quota exhausted (show upgrade prompt)
+- REQ-37: Monthly quota reset
 
-### Layout 2: Dashboard (Logged In)
-- Left sidebar (collapsible, 56px collapsed / 268px open)
-  - Tool navigation buttons (Home, AI YouTube, AI Transcriber, etc.)
-  - My Notes button
-  - Pricing badge (30% Off)
-  - User avatar (initial letter)
-- Top bar: Hamburger (mobile) + Logo + Settings icon
-- Main content area
+### Payments
+- REQ-38: Stripe Checkout integration for plan purchases
+- REQ-39: Webhook handling for subscription lifecycle events
+- REQ-40: Plan upgrade updates user quotas immediately
+- REQ-41: Subscription management page (view plan, cancel)
 
-### Layout 3: Tool Page (Logged In)
-- Same sidebar as Dashboard
-- Tool sub-navigation bar:
-  - Category label (e.g., "AI YouTube")
-  - Sub-tabs (YouTube Summarizer, Transcript, Subtitle, Subscriptions, More)
-  - YouTube Extension link (external)
-  - Separator
-  - My Notes button
-- Quota display: "15" basic | "0" premium | 🚀 Upgrade
-- Main tool content
+### Database
+- REQ-42: Profiles table with quota tracking fields
+- REQ-43: Notes table with source types (youtube, pdf, audio, video, image, webpage, text)
+- REQ-44: Folders table for note organization
+- REQ-45: Conversations and messages tables for AI chat history
+- REQ-46: Subscriptions table linked to Stripe
+- REQ-47: Usage logs table for per-tool tracking
+- REQ-48: All tables have RLS policies (users access only their own data)
 
----
-
-## Pages Required
-
-### Core Pages
-1. `/` — Homepage (logged out: hero + tabs + testimonials + pricing + FAQ)
-2. `/` — Dashboard (logged in: greeting + search + tool tabs + carousel)
-3. `/pricing` — Pricing plans (4 tabs: Annually/Monthly/Education/SaveTogether)
-4. `/login` — Login (Google OAuth + email/password)
-5. `/signup` — Signup
-6. `/notes` — My Notes (folders, search, filter, sort, CRUD)
-7. `/settings` — Account settings
-
-### AI Tool Pages (15 core tools)
-8. `/youtube-video-summarizer` — YouTube Video Summarizer
-9. `/youtube-transcript-generator` — Transcript Generator
-10. `/youtube-subtitle-downloader` — Subtitle Downloader
-11. `/pdf-summary` — PDF Summarizer
-12. `/ai-chat` — AI Chat (multi-model)
-13. `/text-to-speech` — Text to Speech (ElevenLabs)
-14. `/ai-voice-generator` — AI Voice Generator
-15. `/ai-image-generator` — AI Image Generator
-16. `/ai-background-remover` — Background Remover
-17. `/ai-detector` — AI Detector
-18. `/ai-flashcard-maker` — Flashcard Maker
-19. `/ai-quiz-generator` — Quiz Generator
-20. `/ai-presentation-maker` — Presentation Maker
-21. `/ai-mind-map-generator` — Mind Map Generator
-22. `/ai-math-solver` — Math Solver
-
-### Static Pages
-23. `/about-us`
-24. `/contact-us`
-25. `/privacy`
-26. `/terms`
-27. `/faq`
-28. `/blog`
-29. `/free-tools`
-
----
-
-## Feature Requirements
-
-### F1: Authentication
-- Google OAuth (Supabase Auth)
-- Email/password signup & login
-- Auto-create profile on signup
-- Session persistence
-- Protected routes (dashboard, notes, tools)
-
-### F2: YouTube Video Summarizer
-- URL input (single + batch "Add More Link")
-- Input type tabs: YouTube | Video | Audio | PDF/Image | Webpage | Long Text
-- Sub-tabs: YouTube Video | YouTube Playlist
-- "Generate Summary" button
-- Results tabs: My Notes | Batch Tasks
-- Recent video thumbnails
-- Related tools section
-- Quota consumption tracking
-
-### F3: AI Chat
-- Multi-model selector (GPT-5, Gemini, Claude, DeepSeek)
-- Chat interface with message bubbles
-- Typing indicator
-- Quick tools: Upload, DeepThink, Guided Learning
-- Conversation history (saved to Supabase)
-- Quick action buttons: AI Humanizer, AI Detector, AI Podcast, TTS, AI Image
-
-### F4: Text-to-Speech (ElevenLabs)
-- Voice selection dropdown
-- Model selection (Multilingual v2, Turbo, Flash)
-- Voice settings sliders: Stability, Clarity, Style, Speed
-- Text input (max 5000 chars)
-- Audio player with play/pause, progress bar, download
-- Quota tracking
-
-### F5: My Notes
-- Folder management (create, rename, delete)
-- Note list with search, type filter, sort
-- Note types: YouTube, PDF, Audio, Video, Image, Webpage, Text
-- CRUD operations
-- Empty state with CTA
-
-### F6: Pricing & Subscriptions (Stripe)
-- 4 billing tabs: Annually (Save 50%), Monthly, Education, SaveTogether
-- 3 plan cards per tab with features list
-- Stripe Checkout integration
-- Subscription management
-- Quota limits per plan:
-  - Free: 15 basic, 0 premium
-  - Basic: 200 basic, 0 premium
-  - Pro: 1,000 basic, 100 premium
-  - Unlimited: ∞ basic, 2,800 premium
-
-### F7: Quota System
-- Track basic_quotas_used vs basic_quotas_limit
-- Track premium_credits_used vs premium_credits_limit
-- Display in tool pages: "15 basic | 0 premium | 🚀 Upgrade"
-- Monthly reset
-- Usage logging per tool
-
-### F8: Sidebar Navigation
-- Collapsible (56px / 268px)
-- Tool icons with labels
-- Active state highlighting
-- My Notes shortcut
-- Pricing badge (30% Off)
-- User avatar
-
----
-
-## Tech Stack
-- **Framework**: Nuxt 4 (Vue 3)
-- **Styling**: Tailwind CSS v4 + Nuxt UI
-- **Auth**: Supabase Auth (Google OAuth + email)
-- **Database**: Supabase PostgreSQL
-- **AI**: OpenRouter (multi-model chat, summarization)
-- **TTS**: ElevenLabs SDK
-- **Payments**: Stripe
-- **Deployment**: Vercel
-
----
-
-## Database Schema (Already Created in Supabase)
-- `profiles` — user profiles with quota tracking
-- `folders` — note organization
-- `notes` — with source types and metadata
-- `conversations` + `messages` — AI chat history
-- `subscriptions` — Stripe integration
-- `usage_logs` — per-tool usage tracking
-
-All tables have RLS policies (users can only access their own data).
-
----
-
-## API Routes Required
-- `POST /api/tts` — ElevenLabs text-to-speech (done)
-- `POST /api/chat` — OpenRouter AI chat (done)
-- `POST /api/summarize` — OpenRouter summarization (done)
-- `POST /api/youtube/transcript` — YouTube transcript extraction
-- `POST /api/stripe/checkout` — Create Stripe checkout session
-- `POST /api/stripe/webhook` — Handle Stripe webhooks
-- `POST /api/detect` — AI content detection
-- `POST /api/image/generate` — AI image generation
+### Sidebar Navigation
+- REQ-49: Collapsible sidebar with smooth transition
+- REQ-50: Tool icons with labels (hidden when collapsed)
+- REQ-51: Active state highlighting for current route
+- REQ-52: My Notes shortcut at bottom
+- REQ-53: Pricing badge (30% Off) with link
+- REQ-54: User avatar with initial letter

@@ -1,0 +1,272 @@
+{
+  "communities": {
+    "0": [
+      "concept_dashboard_layout",
+      "concept_notes_management",
+      "concept_pricing_model",
+      "concept_supabase_auth",
+      "img_notes",
+      "img_pricing"
+    ],
+    "1": [
+      "concept_ai_chat",
+      "concept_text_to_speech",
+      "concept_youtube_summarizer",
+      "img_ai_chat_live",
+      "img_tts",
+      "img_youtube_summarizer"
+    ],
+    "2": [
+      "concept_nuxt_framework",
+      "img_homepage",
+      "readme_nuxt_starter"
+    ],
+    "3": [
+      "app_components_appsidebar_vue",
+      "components_appsidebar_togglecollapse"
+    ],
+    "4": [
+      "app_composables_useprofile_ts",
+      "composables_useprofile_useprofile"
+    ],
+    "5": [
+      "app_components_toolsubnav_vue",
+      "components_toolsubnav_isactivetab"
+    ],
+    "6": [
+      "app_composables_usenotes_ts",
+      "composables_usenotes_usenotes"
+    ],
+    "7": [
+      "nuxt_config_ts"
+    ],
+    "8": [
+      "app_app_vue"
+    ],
+    "9": [
+      "app_components_appfooter_vue"
+    ],
+    "10": [
+      "app_components_appheader_vue"
+    ],
+    "11": [
+      "app_components_carouselbanner_vue"
+    ],
+    "12": [
+      "app_components_dashboardtopbar_vue"
+    ],
+    "13": [
+      "app_components_quotadisplay_vue"
+    ],
+    "14": [
+      "app_components_sidebaritem_vue"
+    ],
+    "15": [
+      "app_layouts_dashboard_vue"
+    ],
+    "16": [
+      "app_layouts_default_vue"
+    ],
+    "17": [
+      "app_pages_ai_chat_vue"
+    ],
+    "18": [
+      "app_pages_confirm_vue"
+    ],
+    "19": [
+      "app_pages_dashboard_vue"
+    ],
+    "20": [
+      "app_pages_index_vue"
+    ],
+    "21": [
+      "app_pages_login_vue"
+    ],
+    "22": [
+      "app_pages_notes_vue"
+    ],
+    "23": [
+      "app_pages_pricing_vue"
+    ],
+    "24": [
+      "app_pages_signup_vue"
+    ],
+    "25": [
+      "app_pages_text_to_speech_vue"
+    ],
+    "26": [
+      "app_pages_youtube_video_summarizer_vue"
+    ],
+    "27": [
+      "app_types_database_types_ts"
+    ],
+    "28": [
+      "server_api_chat_post_ts"
+    ],
+    "29": [
+      "server_api_summarize_post_ts"
+    ],
+    "30": [
+      "server_api_tts_post_ts"
+    ]
+  },
+  "cohesion": {
+    "0": 0.33,
+    "1": 0.33,
+    "2": 0.67,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0
+  },
+  "gods": [
+    {
+      "id": "concept_notes_management",
+      "label": "Notes Management",
+      "degree": 4
+    },
+    {
+      "id": "concept_ai_chat",
+      "label": "AI Chat Feature",
+      "degree": 3
+    },
+    {
+      "id": "concept_nuxt_framework",
+      "label": "Nuxt 3 Framework",
+      "degree": 2
+    },
+    {
+      "id": "concept_youtube_summarizer",
+      "label": "YouTube Video Summarizer",
+      "degree": 2
+    },
+    {
+      "id": "concept_text_to_speech",
+      "label": "Text-to-Speech Feature",
+      "degree": 2
+    },
+    {
+      "id": "concept_pricing_model",
+      "label": "Pricing & Subscription",
+      "degree": 2
+    },
+    {
+      "id": "readme_nuxt_starter",
+      "label": "Nuxt Minimal Starter",
+      "degree": 1
+    },
+    {
+      "id": "concept_supabase_auth",
+      "label": "Supabase Authentication",
+      "degree": 1
+    },
+    {
+      "id": "concept_dashboard_layout",
+      "label": "Dashboard Layout System",
+      "degree": 1
+    },
+    {
+      "id": "img_ai_chat_live",
+      "label": "AI Chat Live Screenshot",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Homepage Screenshot",
+      "target": "Nuxt 3 Framework",
+      "source_files": [
+        "notegpt-homepage-screenshot.png",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 image); connects across different repos/directories"
+    },
+    {
+      "source": "YouTube Summarizer Screenshot",
+      "target": "YouTube Video Summarizer",
+      "source_files": [
+        "notegpt-youtube-summarizer.png",
+        "app/pages/youtube-video-summarizer.vue"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (code \u2194 image); connects across different repos/directories"
+    },
+    {
+      "source": "AI Chat Live Screenshot",
+      "target": "AI Chat Feature",
+      "source_files": [
+        "notegpt-ai-chat-live.png",
+        "app/pages/ai-chat.vue"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (code \u2194 image); connects across different repos/directories"
+    },
+    {
+      "source": "Text-to-Speech Screenshot",
+      "target": "Text-to-Speech Feature",
+      "source_files": [
+        "notegpt-tts-live.png",
+        "app/pages/text-to-speech.vue"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (code \u2194 image); connects across different repos/directories"
+    },
+    {
+      "source": "Notes Page Screenshot",
+      "target": "Notes Management",
+      "source_files": [
+        "notegpt-my-notes.png",
+        "app/pages/notes.vue"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "crosses file types (code \u2194 image); connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `Notes Management` (e.g. with `Supabase Authentication` and `Pricing & Subscription`) actually correct?",
+      "why": "`Notes Management` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `AI Chat Feature` (e.g. with `YouTube Video Summarizer` and `Text-to-Speech Feature`) actually correct?",
+      "why": "`AI Chat Feature` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Nuxt Minimal Starter`, `Supabase Authentication`, `Dashboard Layout System` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

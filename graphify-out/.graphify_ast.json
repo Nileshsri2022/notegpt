@@ -1,0 +1,298 @@
+{
+  "nodes": [
+    {
+      "id": "nuxt_config_ts",
+      "label": "nuxt.config.ts",
+      "file_type": "code",
+      "source_file": "nuxt.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_app_vue",
+      "label": "app.vue",
+      "file_type": "code",
+      "source_file": "app\\app.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_appfooter_vue",
+      "label": "AppFooter.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\AppFooter.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_appheader_vue",
+      "label": "AppHeader.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\AppHeader.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_appsidebar_vue",
+      "label": "AppSidebar.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\AppSidebar.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_appsidebar_togglecollapse",
+      "label": "toggleCollapse()",
+      "file_type": "code",
+      "source_file": "app\\components\\AppSidebar.vue",
+      "source_location": "L105"
+    },
+    {
+      "id": "app_components_carouselbanner_vue",
+      "label": "CarouselBanner.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\CarouselBanner.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_dashboardtopbar_vue",
+      "label": "DashboardTopBar.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\DashboardTopBar.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_quotadisplay_vue",
+      "label": "QuotaDisplay.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\QuotaDisplay.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_sidebaritem_vue",
+      "label": "SidebarItem.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\SidebarItem.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_toolsubnav_vue",
+      "label": "ToolSubNav.vue",
+      "file_type": "code",
+      "source_file": "app\\components\\ToolSubNav.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_toolsubnav_isactivetab",
+      "label": "isActiveTab()",
+      "file_type": "code",
+      "source_file": "app\\components\\ToolSubNav.vue",
+      "source_location": "L92"
+    },
+    {
+      "id": "app_composables_usenotes_ts",
+      "label": "useNotes.ts",
+      "file_type": "code",
+      "source_file": "app\\composables\\useNotes.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "composables_usenotes_usenotes",
+      "label": "useNotes()",
+      "file_type": "code",
+      "source_file": "app\\composables\\useNotes.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_composables_useprofile_ts",
+      "label": "useProfile.ts",
+      "file_type": "code",
+      "source_file": "app\\composables\\useProfile.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "composables_useprofile_useprofile",
+      "label": "useProfile()",
+      "file_type": "code",
+      "source_file": "app\\composables\\useProfile.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "app_layouts_dashboard_vue",
+      "label": "dashboard.vue",
+      "file_type": "code",
+      "source_file": "app\\layouts\\dashboard.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_layouts_default_vue",
+      "label": "default.vue",
+      "file_type": "code",
+      "source_file": "app\\layouts\\default.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_ai_chat_vue",
+      "label": "ai-chat.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\ai-chat.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_confirm_vue",
+      "label": "confirm.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\confirm.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_dashboard_vue",
+      "label": "dashboard.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\dashboard.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_index_vue",
+      "label": "index.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\index.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_login_vue",
+      "label": "login.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\login.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_notes_vue",
+      "label": "notes.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\notes.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_pricing_vue",
+      "label": "pricing.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\pricing.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_signup_vue",
+      "label": "signup.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\signup.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_text_to_speech_vue",
+      "label": "text-to-speech.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\text-to-speech.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_pages_youtube_video_summarizer_vue",
+      "label": "youtube-video-summarizer.vue",
+      "file_type": "code",
+      "source_file": "app\\pages\\youtube-video-summarizer.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_types_database_types_ts",
+      "label": "database.types.ts",
+      "file_type": "code",
+      "source_file": "app\\types\\database.types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_api_chat_post_ts",
+      "label": "chat.post.ts",
+      "file_type": "code",
+      "source_file": "server\\api\\chat.post.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_api_summarize_post_ts",
+      "label": "summarize.post.ts",
+      "file_type": "code",
+      "source_file": "server\\api\\summarize.post.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "server_api_tts_post_ts",
+      "label": "tts.post.ts",
+      "file_type": "code",
+      "source_file": "server\\api\\tts.post.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "app_components_appsidebar_vue",
+      "target": "components_appsidebar_togglecollapse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\AppSidebar.vue",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_toolsubnav_vue",
+      "target": "components_toolsubnav_isactivetab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\components\\ToolSubNav.vue",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "app_composables_usenotes_ts",
+      "target": "database_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\composables\\useNotes.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_composables_usenotes_ts",
+      "target": "composables_usenotes_usenotes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\composables\\useNotes.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_composables_useprofile_ts",
+      "target": "database_types",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\composables\\useProfile.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_composables_useprofile_ts",
+      "target": "composables_useprofile_useprofile",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app\\composables\\useProfile.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "server_api_tts_post_ts",
+      "target": "elevenlabs_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server\\api\\tts.post.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
