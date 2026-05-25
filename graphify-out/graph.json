@@ -74,7 +74,7 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L1",
       "id": "app_components_appsidebar_vue",
-      "community": 3,
+      "community": 6,
       "norm_label": "appsidebar.vue"
     },
     {
@@ -83,7 +83,7 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L105",
       "id": "components_appsidebar_togglecollapse",
-      "community": 3,
+      "community": 6,
       "norm_label": "togglecollapse()"
     },
     {
@@ -128,7 +128,7 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L1",
       "id": "app_components_toolsubnav_vue",
-      "community": 5,
+      "community": 4,
       "norm_label": "toolsubnav.vue"
     },
     {
@@ -137,7 +137,7 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L92",
       "id": "components_toolsubnav_isactivetab",
-      "community": 5,
+      "community": 4,
       "norm_label": "isactivetab()"
     },
     {
@@ -146,7 +146,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L1",
       "id": "app_composables_usenotes_ts",
-      "community": 6,
+      "community": 3,
       "norm_label": "usenotes.ts"
     },
     {
@@ -155,7 +155,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L3",
       "id": "composables_usenotes_usenotes",
-      "community": 6,
+      "community": 3,
       "norm_label": "usenotes()"
     },
     {
@@ -164,7 +164,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L1",
       "id": "app_composables_useprofile_ts",
-      "community": 4,
+      "community": 5,
       "norm_label": "useprofile.ts"
     },
     {
@@ -173,7 +173,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L3",
       "id": "composables_useprofile_useprofile",
-      "community": 4,
+      "community": 5,
       "norm_label": "useprofile()"
     },
     {
@@ -329,9 +329,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_nuxt_starter",
       "community": 2,
-      "norm_label": "nuxt minimal starter"
+      "norm_label": "nuxt minimal starter",
+      "id": "readme_nuxt_starter"
     },
     {
       "label": "Nuxt 3 Framework",
@@ -342,9 +342,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nuxt_framework",
       "community": 2,
-      "norm_label": "nuxt 3 framework"
+      "norm_label": "nuxt 3 framework",
+      "id": "concept_nuxt_framework"
     },
     {
       "label": "Supabase Authentication",
@@ -355,9 +355,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_supabase_auth",
-      "community": 0,
-      "norm_label": "supabase authentication"
+      "community": 1,
+      "norm_label": "supabase authentication",
+      "id": "concept_supabase_auth"
     },
     {
       "label": "YouTube Video Summarizer",
@@ -368,9 +368,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_youtube_summarizer",
-      "community": 1,
-      "norm_label": "youtube video summarizer"
+      "community": 0,
+      "norm_label": "youtube video summarizer",
+      "id": "concept_youtube_summarizer"
     },
     {
       "label": "AI Chat Feature",
@@ -381,9 +381,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ai_chat",
-      "community": 1,
-      "norm_label": "ai chat feature"
+      "community": 0,
+      "norm_label": "ai chat feature",
+      "id": "concept_ai_chat"
     },
     {
       "label": "Text-to-Speech Feature",
@@ -394,9 +394,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_text_to_speech",
-      "community": 1,
-      "norm_label": "text-to-speech feature"
+      "community": 0,
+      "norm_label": "text-to-speech feature",
+      "id": "concept_text_to_speech"
     },
     {
       "label": "Notes Management",
@@ -407,9 +407,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_notes_management",
-      "community": 0,
-      "norm_label": "notes management"
+      "community": 1,
+      "norm_label": "notes management",
+      "id": "concept_notes_management"
     },
     {
       "label": "Pricing & Subscription",
@@ -420,9 +420,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pricing_model",
-      "community": 0,
-      "norm_label": "pricing & subscription"
+      "community": 1,
+      "norm_label": "pricing & subscription",
+      "id": "concept_pricing_model"
     },
     {
       "label": "Dashboard Layout System",
@@ -433,9 +433,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_dashboard_layout",
-      "community": 0,
-      "norm_label": "dashboard layout system"
+      "community": 1,
+      "norm_label": "dashboard layout system",
+      "id": "concept_dashboard_layout"
     },
     {
       "label": "AI Chat Live Screenshot",
@@ -446,9 +446,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_ai_chat_live",
-      "community": 1,
-      "norm_label": "ai chat live screenshot"
+      "community": 0,
+      "norm_label": "ai chat live screenshot",
+      "id": "img_ai_chat_live"
     },
     {
       "label": "Homepage Screenshot",
@@ -459,9 +459,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_homepage",
       "community": 2,
-      "norm_label": "homepage screenshot"
+      "norm_label": "homepage screenshot",
+      "id": "img_homepage"
     },
     {
       "label": "Pricing Page Screenshot",
@@ -472,9 +472,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_pricing",
-      "community": 0,
-      "norm_label": "pricing page screenshot"
+      "community": 1,
+      "norm_label": "pricing page screenshot",
+      "id": "img_pricing"
     },
     {
       "label": "YouTube Summarizer Screenshot",
@@ -485,9 +485,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_youtube_summarizer",
-      "community": 1,
-      "norm_label": "youtube summarizer screenshot"
+      "community": 0,
+      "norm_label": "youtube summarizer screenshot",
+      "id": "img_youtube_summarizer"
     },
     {
       "label": "Notes Page Screenshot",
@@ -498,9 +498,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_notes",
-      "community": 0,
-      "norm_label": "notes page screenshot"
+      "community": 1,
+      "norm_label": "notes page screenshot",
+      "id": "img_notes"
     },
     {
       "label": "Text-to-Speech Screenshot",
@@ -511,9 +511,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "img_tts",
-      "community": 1,
-      "norm_label": "text-to-speech screenshot"
+      "community": 0,
+      "norm_label": "text-to-speech screenshot",
+      "id": "img_tts"
     }
   ],
   "links": [
@@ -523,9 +523,9 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_components_appsidebar_vue",
-      "target": "components_appsidebar_togglecollapse",
-      "confidence_score": 1.0
+      "target": "components_appsidebar_togglecollapse"
     },
     {
       "relation": "contains",
@@ -533,9 +533,9 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_components_toolsubnav_vue",
-      "target": "components_toolsubnav_isactivetab",
-      "confidence_score": 1.0
+      "target": "components_toolsubnav_isactivetab"
     },
     {
       "relation": "contains",
@@ -543,9 +543,9 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_composables_usenotes_ts",
-      "target": "composables_usenotes_usenotes",
-      "confidence_score": 1.0
+      "target": "composables_usenotes_usenotes"
     },
     {
       "relation": "contains",
@@ -553,9 +553,9 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_composables_useprofile_ts",
-      "target": "composables_useprofile_useprofile",
-      "confidence_score": 1.0
+      "target": "composables_useprofile_useprofile"
     },
     {
       "relation": "references",
@@ -706,5 +706,5 @@
       "source_file": "app/pages/login.vue"
     }
   ],
-  "built_at_commit": "0d2ce740b184289baf745bda9684216a019fdbb2"
+  "built_at_commit": "af317f6d18337295e55de4e4c1a98a09d46b0dc9"
 }

@@ -118,7 +118,7 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({ layout: false })
+definePageMeta({ layout: false, middleware: 'auth' })
 
 const text = ref('')
 const selectedVoice = ref('JBFqnCBsd6RMkjVDRZzb')
