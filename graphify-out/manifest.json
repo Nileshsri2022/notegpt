@@ -1,10 +1,10 @@
 {
   "D:\\vscode_programs\\notegpt\\nuxt.config.ts": {
-    "mtime": 1779689382.083487,
-    "hash": "a33179fb7b25f2c1870afd7e79f92847"
+    "mtime": 1779722348.5575242,
+    "hash": "032ae1c759fb54907f6187ebfb109f69"
   },
   "D:\\vscode_programs\\notegpt\\app\\app.vue": {
-    "mtime": 1779687522.8040576,
+    "mtime": 1779703330.829702,
     "hash": "4f15a5f0971e82782d8e310674c3abf7"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\AppFooter.vue": {
@@ -16,32 +16,32 @@
     "hash": "06c16f5311550e8f504f04c75954731d"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\AppSidebar.vue": {
-    "mtime": 1779694342.4671564,
-    "hash": "6f8da7348e034301c2de4f7d1e1a454d"
+    "mtime": 1779704937.0664992,
+    "hash": "49055fb9845aa1e7140f3a5ec450fbc7"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\CarouselBanner.vue": {
     "mtime": 1779694479.0553024,
     "hash": "00d3eb708a62ed8ef7ca74320a11f162"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\DashboardTopBar.vue": {
-    "mtime": 1779687230.1315517,
-    "hash": "7150e9a6d969277ed9e440e3274ef48c"
+    "mtime": 1779704970.1722577,
+    "hash": "a4ee0b177fd9e63269daeed12a12fe6f"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\QuotaDisplay.vue": {
-    "mtime": 1779694253.1230958,
-    "hash": "730119b998e3c68706954aa9f19129e2"
+    "mtime": 1779705485.552893,
+    "hash": "7740efaaeec415388373fb7a353a6940"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\SidebarItem.vue": {
-    "mtime": 1779693728.400196,
-    "hash": "c5edc191694b2c1e839f59dbc7b1bcf6"
+    "mtime": 1779705069.6505115,
+    "hash": "b5eb4cf32f41c047af2b1f03d314141d"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\ToolPageLayout.vue": {
-    "mtime": 1779701234.2799351,
-    "hash": "33063f57c81b1d0775f2071746c8f43f"
+    "mtime": 1779705710.46518,
+    "hash": "db053a1502a9430e31d6c4ac17e514c0"
   },
   "D:\\vscode_programs\\notegpt\\app\\components\\ToolSubNav.vue": {
-    "mtime": 1779694273.1366503,
-    "hash": "b38b29219ef912d5d3d9aa3c8735853f"
+    "mtime": 1779705453.7471082,
+    "hash": "834556690b45d3449d91cee0b0eaa6c8"
   },
   "D:\\vscode_programs\\notegpt\\app\\composables\\useChat.ts": {
     "mtime": 1779699106.4363534,
@@ -56,16 +56,16 @@
     "hash": "228dae9cb104350657a22133e19c42b0"
   },
   "D:\\vscode_programs\\notegpt\\app\\layouts\\dashboard.vue": {
-    "mtime": 1779693851.5462124,
-    "hash": "7f94277c0efcd3b620d76e14b6fc174a"
+    "mtime": 1779705036.703808,
+    "hash": "38da534faf421ba9278886b7ae9fd44a"
   },
   "D:\\vscode_programs\\notegpt\\app\\layouts\\default.vue": {
     "mtime": 1779687173.87016,
     "hash": "91d4148699cf3fcd8ef732a4556e4d5e"
   },
   "D:\\vscode_programs\\notegpt\\app\\middleware\\auth.ts": {
-    "mtime": 1779699060.814167,
-    "hash": "fb7ea5b97862192555aa26ece373df9a"
+    "mtime": 1779706059.0271375,
+    "hash": "529922e541c1437fc86bef1a7d98e124"
   },
   "D:\\vscode_programs\\notegpt\\app\\middleware\\quota.ts": {
     "mtime": 1779699144.2028108,
@@ -107,13 +107,17 @@
     "mtime": 1779701309.5176122,
     "hash": "544a8abba312880e6d3b53eb1405b8c5"
   },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\audio-summary.vue": {
+    "mtime": 1779706451.4476874,
+    "hash": "c87af5199a6926ab42ca223130119712"
+  },
   "D:\\vscode_programs\\notegpt\\app\\pages\\confirm.vue": {
     "mtime": 1779689413.5511017,
     "hash": "fcb031a4d9da092c415c6b7e06667732"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\dashboard.vue": {
-    "mtime": 1779699154.3475542,
-    "hash": "ac543158f9b15e7d04006e877c6f88d0"
+    "mtime": 1779706030.938338,
+    "hash": "783a680334fb46e224ed2b2b7d3c0efe"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\index.vue": {
     "mtime": 1779687339.084664,
@@ -132,24 +136,40 @@
     "hash": "58173cbfcb670799cf159cf97b6b8192"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\pricing.vue": {
-    "mtime": 1779687372.0967581,
-    "hash": "2ff556b8199b8e21552944cb88321cce"
+    "mtime": 1779719061.1628833,
+    "hash": "a4c455454cc66f97570f88181220bfa0"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\signup.vue": {
     "mtime": 1779689411.0662966,
     "hash": "7912363366eb991d740387e8b81fc396"
   },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\subscription.vue": {
+    "mtime": 1779718910.3769956,
+    "hash": "6fc2c0095bd189f219474be6b8eae054"
+  },
   "D:\\vscode_programs\\notegpt\\app\\pages\\text-to-speech.vue": {
-    "mtime": 1779699155.15772,
-    "hash": "4f7801e63d4f1d47a26d47eb0d0017cb"
+    "mtime": 1779718361.6438382,
+    "hash": "aa88a82b8056afd98030954626294b58"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\video-summarizer.vue": {
+    "mtime": 1779706476.2942767,
+    "hash": "07f2f28ca206b771cdf22fd6bc9546c8"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\youtube-subtitle-downloader.vue": {
+    "mtime": 1779703566.589432,
+    "hash": "85385d588d27a383d8cd9751f07412f1"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\youtube-transcript-generator.vue": {
+    "mtime": 1779703465.8572495,
+    "hash": "07d99da692bb1fa28ae0d0d5334261dc"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\youtube-video-summarizer.vue": {
-    "mtime": 1779699199.8127244,
-    "hash": "1e677028e460a032eea5bc871bf0ac66"
+    "mtime": 1779718280.8471885,
+    "hash": "7b76cb470090e52d5ebbdde620796b42"
   },
   "D:\\vscode_programs\\notegpt\\app\\types\\database.types.ts": {
-    "mtime": 1779689372.2345593,
-    "hash": "f97eee7204ed5720b4108760b9735189"
+    "mtime": 1779722217.3383372,
+    "hash": "0e0ab597af7baa7eda573e0e1f6c000d"
   },
   "D:\\vscode_programs\\notegpt\\server\\api\\chat.post.ts": {
     "mtime": 1779687510.7428062,
@@ -167,9 +187,25 @@
     "mtime": 1779687506.915012,
     "hash": "fa77e09db993ef03561cd04b7659dcfc"
   },
+  "D:\\vscode_programs\\notegpt\\server\\api\\stripe\\checkout.post.ts": {
+    "mtime": 1779722284.8993838,
+    "hash": "72a31e68ab0ad6aed098818cc80431c3"
+  },
+  "D:\\vscode_programs\\notegpt\\server\\api\\stripe\\portal.post.ts": {
+    "mtime": 1779722286.487872,
+    "hash": "46fb6aeb6b4b570117d02a60252f87b4"
+  },
+  "D:\\vscode_programs\\notegpt\\server\\api\\stripe\\webhook.post.ts": {
+    "mtime": 1779722329.9555912,
+    "hash": "f6648cda055c2aa15d66d67622c74887"
+  },
   "D:\\vscode_programs\\notegpt\\server\\api\\youtube\\transcript.post.ts": {
-    "mtime": 1779699077.0116034,
-    "hash": "f0191d433fac61db3e8cc9c6bec4a2d9"
+    "mtime": 1779706092.3182023,
+    "hash": "b3c236ee8d6b3d8674eae76012a6f95b"
+  },
+  "D:\\vscode_programs\\notegpt\\server\\utils\\stripe.ts": {
+    "mtime": 1779718821.1001782,
+    "hash": "bffd2e81c32b0ca9eebe507726dee5e3"
   },
   "D:\\vscode_programs\\notegpt\\README.md": {
     "mtime": 1779160069.0,

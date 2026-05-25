@@ -1,36 +1,37 @@
 # Graph Report - notegpt  (2026-05-25)
 
 ## Corpus Check
-- 43 files · ~66,673 words
+- 52 files · ~71,552 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 75 nodes · 30 edges · 4 communities detected
-- Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
+- 94 nodes · 43 edges · 5 communities detected
+- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `63fc59cc`
+- Built from commit: `b272786a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
-- [[_COMMUNITY_Community 1|Community 1]]
 - [[_COMMUNITY_Community 2|Community 2]]
-- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 8|Community 8]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Notes Management` - 4 edges
-2. `AI Chat Feature` - 3 edges
-3. `resetQuiz()` - 2 edges
-4. `newQuiz()` - 2 edges
-5. `Nuxt 3 Framework` - 2 edges
-6. `YouTube Video Summarizer` - 2 edges
-7. `Text-to-Speech Feature` - 2 edges
-8. `Pricing & Subscription` - 2 edges
-9. `Nuxt Minimal Starter` - 1 edges
-10. `Supabase Authentication` - 1 edges
+1. `useStripe()` - 4 edges
+2. `Notes Management` - 4 edges
+3. `AI Chat Feature` - 3 edges
+4. `resetQuiz()` - 2 edges
+5. `newQuiz()` - 2 edges
+6. `Nuxt 3 Framework` - 2 edges
+7. `YouTube Video Summarizer` - 2 edges
+8. `Text-to-Speech Feature` - 2 edges
+9. `Pricing & Subscription` - 2 edges
+10. `Nuxt Minimal Starter` - 1 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Homepage Screenshot` --references--> `Nuxt 3 Framework`  [INFERRED]
@@ -48,24 +49,24 @@
 - **AI-Powered Features** — concept_youtube_summarizer, concept_ai_chat, concept_text_to_speech [INFERRED 0.85]
 - **Authentication Flow** — concept_supabase_auth, concept_dashboard_layout, concept_notes_management [INFERRED 0.80]
 
-## Communities (46 total, 1 thin omitted)
-
-### Community 1 - "Community 1"
-Cohesion: 0.33
-Nodes (6): Dashboard Layout System, Notes Management, Pricing & Subscription, Supabase Authentication, Notes Page Screenshot, Pricing Page Screenshot
+## Communities (52 total, 2 thin omitted)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.33
 Nodes (6): AI Chat Feature, Text-to-Speech Feature, YouTube Video Summarizer, AI Chat Live Screenshot, Text-to-Speech Screenshot, YouTube Summarizer Screenshot
 
-### Community 5 - "Community 5"
+### Community 3 - "Community 3"
+Cohesion: 0.33
+Nodes (6): Dashboard Layout System, Notes Management, Pricing & Subscription, Supabase Authentication, Notes Page Screenshot, Pricing Page Screenshot
+
+### Community 8 - "Community 8"
 Cohesion: 0.67
 Nodes (3): Nuxt 3 Framework, Homepage Screenshot, Nuxt Minimal Starter
 
 ## Knowledge Gaps
 - **9 isolated node(s):** `Nuxt Minimal Starter`, `Supabase Authentication`, `Dashboard Layout System`, `AI Chat Live Screenshot`, `Homepage Screenshot` (+4 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

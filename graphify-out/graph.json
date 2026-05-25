@@ -38,7 +38,7 @@
       "source_file": "nuxt.config.ts",
       "source_location": "L1",
       "id": "nuxt_config_ts",
-      "community": 12,
+      "community": 17,
       "norm_label": "nuxt.config.ts"
     },
     {
@@ -47,7 +47,7 @@
       "source_file": "app/app.vue",
       "source_location": "L1",
       "id": "app_app_vue",
-      "community": 13,
+      "community": 18,
       "norm_label": "app.vue"
     },
     {
@@ -56,7 +56,7 @@
       "source_file": "app/components/AppFooter.vue",
       "source_location": "L1",
       "id": "app_components_appfooter_vue",
-      "community": 14,
+      "community": 19,
       "norm_label": "appfooter.vue"
     },
     {
@@ -65,7 +65,7 @@
       "source_file": "app/components/AppHeader.vue",
       "source_location": "L1",
       "id": "app_components_appheader_vue",
-      "community": 15,
+      "community": 20,
       "norm_label": "appheader.vue"
     },
     {
@@ -74,16 +74,16 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L1",
       "id": "app_components_appsidebar_vue",
-      "community": 6,
+      "community": 9,
       "norm_label": "appsidebar.vue"
     },
     {
       "label": "toggleCollapse()",
       "file_type": "code",
       "source_file": "app/components/AppSidebar.vue",
-      "source_location": "L105",
+      "source_location": "L148",
       "id": "components_appsidebar_togglecollapse",
-      "community": 6,
+      "community": 9,
       "norm_label": "togglecollapse()"
     },
     {
@@ -92,7 +92,7 @@
       "source_file": "app/components/CarouselBanner.vue",
       "source_location": "L1",
       "id": "app_components_carouselbanner_vue",
-      "community": 16,
+      "community": 21,
       "norm_label": "carouselbanner.vue"
     },
     {
@@ -101,7 +101,7 @@
       "source_file": "app/components/DashboardTopBar.vue",
       "source_location": "L1",
       "id": "app_components_dashboardtopbar_vue",
-      "community": 17,
+      "community": 22,
       "norm_label": "dashboardtopbar.vue"
     },
     {
@@ -110,7 +110,7 @@
       "source_file": "app/components/QuotaDisplay.vue",
       "source_location": "L1",
       "id": "app_components_quotadisplay_vue",
-      "community": 18,
+      "community": 23,
       "norm_label": "quotadisplay.vue"
     },
     {
@@ -119,7 +119,7 @@
       "source_file": "app/components/SidebarItem.vue",
       "source_location": "L1",
       "id": "app_components_sidebaritem_vue",
-      "community": 19,
+      "community": 24,
       "norm_label": "sidebaritem.vue"
     },
     {
@@ -128,7 +128,7 @@
       "source_file": "app/components/ToolPageLayout.vue",
       "source_location": "L1",
       "id": "app_components_toolpagelayout_vue",
-      "community": 20,
+      "community": 25,
       "norm_label": "toolpagelayout.vue"
     },
     {
@@ -137,17 +137,8 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L1",
       "id": "app_components_toolsubnav_vue",
-      "community": 7,
+      "community": 16,
       "norm_label": "toolsubnav.vue"
-    },
-    {
-      "label": "isActiveTab()",
-      "file_type": "code",
-      "source_file": "app/components/ToolSubNav.vue",
-      "source_location": "L92",
-      "id": "components_toolsubnav_isactivetab",
-      "community": 7,
-      "norm_label": "isactivetab()"
     },
     {
       "label": "useChat.ts",
@@ -155,7 +146,7 @@
       "source_file": "app/composables/useChat.ts",
       "source_location": "L1",
       "id": "app_composables_usechat_ts",
-      "community": 8,
+      "community": 10,
       "norm_label": "usechat.ts"
     },
     {
@@ -164,7 +155,7 @@
       "source_file": "app/composables/useChat.ts",
       "source_location": "L10",
       "id": "composables_usechat_usechat",
-      "community": 8,
+      "community": 10,
       "norm_label": "usechat()"
     },
     {
@@ -173,7 +164,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L1",
       "id": "app_composables_usenotes_ts",
-      "community": 9,
+      "community": 11,
       "norm_label": "usenotes.ts"
     },
     {
@@ -182,7 +173,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L3",
       "id": "composables_usenotes_usenotes",
-      "community": 9,
+      "community": 11,
       "norm_label": "usenotes()"
     },
     {
@@ -191,7 +182,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L1",
       "id": "app_composables_useprofile_ts",
-      "community": 10,
+      "community": 12,
       "norm_label": "useprofile.ts"
     },
     {
@@ -200,7 +191,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L3",
       "id": "composables_useprofile_useprofile",
-      "community": 10,
+      "community": 12,
       "norm_label": "useprofile()"
     },
     {
@@ -209,8 +200,17 @@
       "source_file": "app/layouts/dashboard.vue",
       "source_location": "L1",
       "id": "app_layouts_dashboard_vue",
-      "community": 21,
+      "community": 13,
       "norm_label": "dashboard.vue"
+    },
+    {
+      "label": "toggleMobileSidebar()",
+      "file_type": "code",
+      "source_file": "app/layouts/dashboard.vue",
+      "source_location": "L17",
+      "id": "layouts_dashboard_togglemobilesidebar",
+      "community": 13,
+      "norm_label": "togglemobilesidebar()"
     },
     {
       "label": "default.vue",
@@ -218,7 +218,7 @@
       "source_file": "app/layouts/default.vue",
       "source_location": "L1",
       "id": "app_layouts_default_vue",
-      "community": 22,
+      "community": 26,
       "norm_label": "default.vue"
     },
     {
@@ -227,7 +227,7 @@
       "source_file": "app/middleware/auth.ts",
       "source_location": "L1",
       "id": "app_middleware_auth_ts",
-      "community": 23,
+      "community": 27,
       "norm_label": "auth.ts"
     },
     {
@@ -236,7 +236,7 @@
       "source_file": "app/middleware/quota.ts",
       "source_location": "L1",
       "id": "app_middleware_quota_ts",
-      "community": 24,
+      "community": 28,
       "norm_label": "quota.ts"
     },
     {
@@ -245,7 +245,7 @@
       "source_file": "app/pages/ai-chat.vue",
       "source_location": "L1",
       "id": "app_pages_ai_chat_vue",
-      "community": 25,
+      "community": 29,
       "norm_label": "ai-chat.vue"
     },
     {
@@ -254,7 +254,7 @@
       "source_file": "app/pages/ai-detector.vue",
       "source_location": "L1",
       "id": "app_pages_ai_detector_vue",
-      "community": 26,
+      "community": 30,
       "norm_label": "ai-detector.vue"
     },
     {
@@ -263,7 +263,7 @@
       "source_file": "app/pages/ai-flashcard-maker.vue",
       "source_location": "L1",
       "id": "app_pages_ai_flashcard_maker_vue",
-      "community": 27,
+      "community": 31,
       "norm_label": "ai-flashcard-maker.vue"
     },
     {
@@ -272,7 +272,7 @@
       "source_file": "app/pages/ai-image-generator.vue",
       "source_location": "L1",
       "id": "app_pages_ai_image_generator_vue",
-      "community": 28,
+      "community": 32,
       "norm_label": "ai-image-generator.vue"
     },
     {
@@ -281,7 +281,7 @@
       "source_file": "app/pages/ai-math-solver.vue",
       "source_location": "L1",
       "id": "app_pages_ai_math_solver_vue",
-      "community": 29,
+      "community": 33,
       "norm_label": "ai-math-solver.vue"
     },
     {
@@ -290,7 +290,7 @@
       "source_file": "app/pages/ai-mind-map-generator.vue",
       "source_location": "L1",
       "id": "app_pages_ai_mind_map_generator_vue",
-      "community": 11,
+      "community": 14,
       "norm_label": "ai-mind-map-generator.vue"
     },
     {
@@ -299,7 +299,7 @@
       "source_file": "app/pages/ai-mind-map-generator.vue",
       "source_location": "L181",
       "id": "pages_ai_mind_map_generator_for",
-      "community": 11,
+      "community": 14,
       "norm_label": "for()"
     },
     {
@@ -308,7 +308,7 @@
       "source_file": "app/pages/ai-presentation-maker.vue",
       "source_location": "L1",
       "id": "app_pages_ai_presentation_maker_vue",
-      "community": 30,
+      "community": 34,
       "norm_label": "ai-presentation-maker.vue"
     },
     {
@@ -380,8 +380,17 @@
       "source_file": "app/pages/ai-voice-generator.vue",
       "source_location": "L1",
       "id": "app_pages_ai_voice_generator_vue",
-      "community": 31,
+      "community": 35,
       "norm_label": "ai-voice-generator.vue"
+    },
+    {
+      "label": "audio-summary.vue",
+      "file_type": "code",
+      "source_file": "app/pages/audio-summary.vue",
+      "source_location": "L1",
+      "id": "app_pages_audio_summary_vue",
+      "community": 36,
+      "norm_label": "audio-summary.vue"
     },
     {
       "label": "confirm.vue",
@@ -389,7 +398,7 @@
       "source_file": "app/pages/confirm.vue",
       "source_location": "L1",
       "id": "app_pages_confirm_vue",
-      "community": 32,
+      "community": 37,
       "norm_label": "confirm.vue"
     },
     {
@@ -398,7 +407,7 @@
       "source_file": "app/pages/dashboard.vue",
       "source_location": "L1",
       "id": "app_pages_dashboard_vue",
-      "community": 33,
+      "community": 38,
       "norm_label": "dashboard.vue"
     },
     {
@@ -407,7 +416,7 @@
       "source_file": "app/pages/index.vue",
       "source_location": "L1",
       "id": "app_pages_index_vue",
-      "community": 34,
+      "community": 39,
       "norm_label": "index.vue"
     },
     {
@@ -416,7 +425,7 @@
       "source_file": "app/pages/login.vue",
       "source_location": "L1",
       "id": "app_pages_login_vue",
-      "community": 35,
+      "community": 40,
       "norm_label": "login.vue"
     },
     {
@@ -425,7 +434,7 @@
       "source_file": "app/pages/notes.vue",
       "source_location": "L1",
       "id": "app_pages_notes_vue",
-      "community": 36,
+      "community": 41,
       "norm_label": "notes.vue"
     },
     {
@@ -434,7 +443,7 @@
       "source_file": "app/pages/pdf-summary.vue",
       "source_location": "L1",
       "id": "app_pages_pdf_summary_vue",
-      "community": 4,
+      "community": 6,
       "norm_label": "pdf-summary.vue"
     },
     {
@@ -443,7 +452,7 @@
       "source_file": "app/pages/pdf-summary.vue",
       "source_location": "L212",
       "id": "pages_pdf_summary_savetonotes",
-      "community": 4,
+      "community": 6,
       "norm_label": "savetonotes()"
     },
     {
@@ -452,7 +461,7 @@
       "source_file": "app/pages/pdf-summary.vue",
       "source_location": "L230",
       "id": "pages_pdf_summary_copytoclipboard",
-      "community": 4,
+      "community": 6,
       "norm_label": "copytoclipboard()"
     },
     {
@@ -461,8 +470,17 @@
       "source_file": "app/pages/pricing.vue",
       "source_location": "L1",
       "id": "app_pages_pricing_vue",
-      "community": 37,
+      "community": 15,
       "norm_label": "pricing.vue"
+    },
+    {
+      "label": "handleCheckout()",
+      "file_type": "code",
+      "source_file": "app/pages/pricing.vue",
+      "source_location": "L108",
+      "id": "pages_pricing_handlecheckout",
+      "community": 15,
+      "norm_label": "handlecheckout()"
     },
     {
       "label": "signup.vue",
@@ -470,8 +488,17 @@
       "source_file": "app/pages/signup.vue",
       "source_location": "L1",
       "id": "app_pages_signup_vue",
-      "community": 38,
+      "community": 42,
       "norm_label": "signup.vue"
+    },
+    {
+      "label": "subscription.vue",
+      "file_type": "code",
+      "source_file": "app/pages/subscription.vue",
+      "source_location": "L1",
+      "id": "app_pages_subscription_vue",
+      "community": 43,
+      "norm_label": "subscription.vue"
     },
     {
       "label": "text-to-speech.vue",
@@ -479,8 +506,53 @@
       "source_file": "app/pages/text-to-speech.vue",
       "source_location": "L1",
       "id": "app_pages_text_to_speech_vue",
-      "community": 39,
+      "community": 44,
       "norm_label": "text-to-speech.vue"
+    },
+    {
+      "label": "video-summarizer.vue",
+      "file_type": "code",
+      "source_file": "app/pages/video-summarizer.vue",
+      "source_location": "L1",
+      "id": "app_pages_video_summarizer_vue",
+      "community": 45,
+      "norm_label": "video-summarizer.vue"
+    },
+    {
+      "label": "youtube-subtitle-downloader.vue",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-subtitle-downloader.vue",
+      "source_location": "L1",
+      "id": "app_pages_youtube_subtitle_downloader_vue",
+      "community": 7,
+      "norm_label": "youtube-subtitle-downloader.vue"
+    },
+    {
+      "label": "fetchSubtitles()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-subtitle-downloader.vue",
+      "source_location": "L102",
+      "id": "pages_youtube_subtitle_downloader_fetchsubtitles",
+      "community": 7,
+      "norm_label": "fetchsubtitles()"
+    },
+    {
+      "label": "downloadSubtitles()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-subtitle-downloader.vue",
+      "source_location": "L122",
+      "id": "pages_youtube_subtitle_downloader_downloadsubtitles",
+      "community": 7,
+      "norm_label": "downloadsubtitles()"
+    },
+    {
+      "label": "youtube-transcript-generator.vue",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-transcript-generator.vue",
+      "source_location": "L1",
+      "id": "app_pages_youtube_transcript_generator_vue",
+      "community": 46,
+      "norm_label": "youtube-transcript-generator.vue"
     },
     {
       "label": "youtube-video-summarizer.vue",
@@ -488,8 +560,53 @@
       "source_file": "app/pages/youtube-video-summarizer.vue",
       "source_location": "L1",
       "id": "app_pages_youtube_video_summarizer_vue",
-      "community": 40,
+      "community": 1,
       "norm_label": "youtube-video-summarizer.vue"
+    },
+    {
+      "label": "addUrl()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L285",
+      "id": "pages_youtube_video_summarizer_addurl",
+      "community": 1,
+      "norm_label": "addurl()"
+    },
+    {
+      "label": "removeUrl()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L289",
+      "id": "pages_youtube_video_summarizer_removeurl",
+      "community": 1,
+      "norm_label": "removeurl()"
+    },
+    {
+      "label": "fillExample()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L293",
+      "id": "pages_youtube_video_summarizer_fillexample",
+      "community": 1,
+      "norm_label": "fillexample()"
+    },
+    {
+      "label": "generateSummary()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L297",
+      "id": "pages_youtube_video_summarizer_generatesummary",
+      "community": 1,
+      "norm_label": "generatesummary()"
+    },
+    {
+      "label": "saveToNotes()",
+      "file_type": "code",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L351",
+      "id": "pages_youtube_video_summarizer_savetonotes",
+      "community": 1,
+      "norm_label": "savetonotes()"
     },
     {
       "label": "database.types.ts",
@@ -497,7 +614,7 @@
       "source_file": "app/types/database.types.ts",
       "source_location": "L1",
       "id": "app_types_database_types_ts",
-      "community": 41,
+      "community": 47,
       "norm_label": "database.types.ts"
     },
     {
@@ -506,7 +623,7 @@
       "source_file": "server/api/chat.post.ts",
       "source_location": "L1",
       "id": "server_api_chat_post_ts",
-      "community": 42,
+      "community": 48,
       "norm_label": "chat.post.ts"
     },
     {
@@ -515,7 +632,7 @@
       "source_file": "server/api/detect.post.ts",
       "source_location": "L1",
       "id": "server_api_detect_post_ts",
-      "community": 43,
+      "community": 49,
       "norm_label": "detect.post.ts"
     },
     {
@@ -524,7 +641,7 @@
       "source_file": "server/api/summarize.post.ts",
       "source_location": "L1",
       "id": "server_api_summarize_post_ts",
-      "community": 44,
+      "community": 50,
       "norm_label": "summarize.post.ts"
     },
     {
@@ -533,8 +650,35 @@
       "source_file": "server/api/tts.post.ts",
       "source_location": "L1",
       "id": "server_api_tts_post_ts",
-      "community": 45,
+      "community": 51,
       "norm_label": "tts.post.ts"
+    },
+    {
+      "label": "checkout.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/stripe/checkout.post.ts",
+      "source_location": "L1",
+      "id": "server_api_stripe_checkout_post_ts",
+      "community": 4,
+      "norm_label": "checkout.post.ts"
+    },
+    {
+      "label": "portal.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/stripe/portal.post.ts",
+      "source_location": "L1",
+      "id": "server_api_stripe_portal_post_ts",
+      "community": 4,
+      "norm_label": "portal.post.ts"
+    },
+    {
+      "label": "webhook.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/stripe/webhook.post.ts",
+      "source_location": "L1",
+      "id": "server_api_stripe_webhook_post_ts",
+      "community": 4,
+      "norm_label": "webhook.post.ts"
     },
     {
       "label": "transcript.post.ts",
@@ -542,35 +686,62 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L1",
       "id": "server_api_youtube_transcript_post_ts",
-      "community": 3,
+      "community": 5,
       "norm_label": "transcript.post.ts"
     },
     {
       "label": "extractVideoId()",
       "file_type": "code",
       "source_file": "server/api/youtube/transcript.post.ts",
-      "source_location": "L102",
+      "source_location": "L104",
       "id": "youtube_transcript_post_extractvideoid",
-      "community": 3,
+      "community": 5,
       "norm_label": "extractvideoid()"
     },
     {
       "label": "formatDuration()",
       "file_type": "code",
       "source_file": "server/api/youtube/transcript.post.ts",
-      "source_location": "L122",
+      "source_location": "L124",
       "id": "youtube_transcript_post_formatduration",
-      "community": 3,
+      "community": 5,
       "norm_label": "formatduration()"
     },
     {
       "label": "parseCaptionsXml()",
       "file_type": "code",
       "source_file": "server/api/youtube/transcript.post.ts",
-      "source_location": "L133",
+      "source_location": "L135",
       "id": "youtube_transcript_post_parsecaptionsxml",
-      "community": 3,
+      "community": 5,
       "norm_label": "parsecaptionsxml()"
+    },
+    {
+      "label": "stripe.ts",
+      "file_type": "code",
+      "source_file": "server/utils/stripe.ts",
+      "source_location": "L1",
+      "id": "server_utils_stripe_ts",
+      "community": 4,
+      "norm_label": "stripe.ts"
+    },
+    {
+      "label": "useStripe()",
+      "file_type": "code",
+      "source_file": "server/utils/stripe.ts",
+      "source_location": "L5",
+      "id": "utils_stripe_usestripe",
+      "community": 4,
+      "norm_label": "usestripe()"
+    },
+    {
+      "label": "isActiveTab()",
+      "file_type": "code",
+      "source_file": "app/components/ToolSubNav.vue",
+      "source_location": "L92",
+      "community": 16,
+      "norm_label": "isactivetab()",
+      "id": "components_toolsubnav_isactivetab"
     },
     {
       "label": "Nuxt Minimal Starter",
@@ -581,7 +752,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "nuxt minimal starter",
       "id": "readme_nuxt_starter"
     },
@@ -594,7 +765,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "nuxt 3 framework",
       "id": "concept_nuxt_framework"
     },
@@ -607,7 +778,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "supabase authentication",
       "id": "concept_supabase_auth"
     },
@@ -659,7 +830,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "notes management",
       "id": "concept_notes_management"
     },
@@ -672,7 +843,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "pricing & subscription",
       "id": "concept_pricing_model"
     },
@@ -685,7 +856,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "dashboard layout system",
       "id": "concept_dashboard_layout"
     },
@@ -711,7 +882,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 8,
       "norm_label": "homepage screenshot",
       "id": "img_homepage"
     },
@@ -724,7 +895,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "pricing page screenshot",
       "id": "img_pricing"
     },
@@ -750,7 +921,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 3,
       "norm_label": "notes page screenshot",
       "id": "img_notes"
     },
@@ -822,12 +993,22 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/layouts/dashboard.vue",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "app_layouts_dashboard_vue",
+      "target": "layouts_dashboard_togglemobilesidebar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "app/pages/ai-mind-map-generator.vue",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_mind_map_generator_vue",
-      "target": "pages_ai_mind_map_generator_for",
-      "confidence_score": 1.0
+      "target": "pages_ai_mind_map_generator_for"
     },
     {
       "relation": "contains",
@@ -835,9 +1016,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L236",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_selectanswer",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_selectanswer"
     },
     {
       "relation": "contains",
@@ -845,9 +1026,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L245",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_submitshortanswer",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_submitshortanswer"
     },
     {
       "relation": "contains",
@@ -855,9 +1036,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L255",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_nextquestion",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_nextquestion"
     },
     {
       "relation": "contains",
@@ -865,9 +1046,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_resetquiz",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_resetquiz"
     },
     {
       "relation": "contains",
@@ -875,9 +1056,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_newquiz",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_newquiz"
     },
     {
       "relation": "contains",
@@ -885,9 +1066,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L283",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_ai_quiz_generator_vue",
-      "target": "pages_ai_quiz_generator_generatequiz",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_generatequiz"
     },
     {
       "relation": "calls",
@@ -896,9 +1077,9 @@
       "source_file": "app/pages/ai-quiz-generator.vue",
       "source_location": "L278",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_ai_quiz_generator_newquiz",
-      "target": "pages_ai_quiz_generator_resetquiz",
-      "confidence_score": 1.0
+      "target": "pages_ai_quiz_generator_resetquiz"
     },
     {
       "relation": "contains",
@@ -906,9 +1087,9 @@
       "source_file": "app/pages/pdf-summary.vue",
       "source_location": "L212",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_pdf_summary_vue",
-      "target": "pages_pdf_summary_savetonotes",
-      "confidence_score": 1.0
+      "target": "pages_pdf_summary_savetonotes"
     },
     {
       "relation": "contains",
@@ -916,8 +1097,121 @@
       "source_file": "app/pages/pdf-summary.vue",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_pages_pdf_summary_vue",
-      "target": "pages_pdf_summary_copytoclipboard",
+      "target": "pages_pdf_summary_copytoclipboard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/pricing.vue",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "app_pages_pricing_vue",
+      "target": "pages_pricing_handlecheckout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-subtitle-downloader.vue",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "app_pages_youtube_subtitle_downloader_vue",
+      "target": "pages_youtube_subtitle_downloader_fetchsubtitles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-subtitle-downloader.vue",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "app_pages_youtube_subtitle_downloader_vue",
+      "target": "pages_youtube_subtitle_downloader_downloadsubtitles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "app_pages_youtube_video_summarizer_vue",
+      "target": "pages_youtube_video_summarizer_addurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "app_pages_youtube_video_summarizer_vue",
+      "target": "pages_youtube_video_summarizer_removeurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L293",
+      "weight": 1.0,
+      "source": "app_pages_youtube_video_summarizer_vue",
+      "target": "pages_youtube_video_summarizer_fillexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "app_pages_youtube_video_summarizer_vue",
+      "target": "pages_youtube_video_summarizer_generatesummary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/youtube-video-summarizer.vue",
+      "source_location": "L351",
+      "weight": 1.0,
+      "source": "app_pages_youtube_video_summarizer_vue",
+      "target": "pages_youtube_video_summarizer_savetonotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server/api/stripe/checkout.post.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "server_api_stripe_checkout_post_ts",
+      "target": "utils_stripe_usestripe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server/api/stripe/portal.post.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "server_api_stripe_portal_post_ts",
+      "target": "utils_stripe_usestripe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "server/api/stripe/webhook.post.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "server_api_stripe_webhook_post_ts",
+      "target": "utils_stripe_usestripe",
       "confidence_score": 1.0
     },
     {
@@ -949,6 +1243,16 @@
       "confidence_score": 1.0,
       "source": "server_api_youtube_transcript_post_ts",
       "target": "youtube_transcript_post_parsecaptionsxml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "server/utils/stripe.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "server_utils_stripe_ts",
+      "target": "utils_stripe_usestripe",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -1099,5 +1403,5 @@
       "source_file": "app/pages/login.vue"
     }
   ],
-  "built_at_commit": "63fc59ccaf2d03f7b266141e0a60edd540801de3"
+  "built_at_commit": "b272786a75bc4677c0ab5b7a22c95fc2415dfb8d"
 }

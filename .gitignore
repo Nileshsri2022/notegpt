@@ -39,3 +39,13 @@ logs
 .kiro/settings/
 
 .vercel
+
+# Graphify output (generated)
+graphify-out/
+
+# Claude settings (local)
+.claude/
+.claude.json
+
+# Postman config
+.postman.json
