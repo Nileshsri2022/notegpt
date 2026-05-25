@@ -7,13 +7,18 @@
           <div class="w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center mx-auto mb-4">
             <span class="text-white font-bold text-lg">N</span>
           </div>
-          <h1 class="text-2xl font-bold text-gray-900">Welcome to NoteGPT</h1>
-          <p class="text-sm text-gray-500 mt-2">Sign in to access your AI learning tools</p>
+          <h1 class="text-2xl font-bold text-gray-900">Create Your Account</h1>
+          <p class="text-sm text-gray-500 mt-2">Start learning smarter with AI</p>
         </div>
 
         <!-- Error message -->
         <div v-if="errorMsg" class="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-600">
           {{ errorMsg }}
+        </div>
+
+        <!-- Success message -->
+        <div v-if="successMsg" class="mb-4 p-3 bg-green-50 border border-green-200 rounded-lg text-sm text-green-600">
+          {{ successMsg }}
         </div>
 
         <!-- Google OAuth -->
@@ -22,8 +27,7 @@
           size="lg"
           variant="outline"
           class="mb-4"
-          :loading="loadingGoogle"
-          @click="signInWithGoogle"
+          @click="signUpWithGoogle"
         >
           <Icon name="simple-icons:google" class="w-5 h-5 mr-2" />
           Continue with Google
@@ -37,7 +41,11 @@
         </div>
 
         <!-- Email form -->
-        <form @submit.prevent="signInWithEmail" class="space-y-4">
+        <form @submit.prevent="signUpWithEmail" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+            <UInput v-model="fullName" type="text" placeholder="John Doe" size="lg" />
+          </div>
           <div>
             <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
             <UInput v-model="email" type="email" placeholder="you@example.com" size="lg" />
@@ -46,14 +54,14 @@
             <label class="block text-sm font-medium text-gray-700 mb-1">Password</label>
             <UInput v-model="password" type="password" placeholder="••••••••" size="lg" />
           </div>
-          <UButton type="submit" color="primary" block size="lg" :loading="loadingEmail">
-            Sign In
+          <UButton type="submit" color="primary" block size="lg" :loading="loading">
+            Create Account
           </UButton>
         </form>
 
         <p class="text-center text-sm text-gray-500 mt-6">
-          Don't have an account?
-          <NuxtLink to="/signup" class="text-primary-500 font-medium hover:underline">Sign up</NuxtLink>
+          Already have an account?
+          <NuxtLink to="/login" class="text-primary-500 font-medium hover:underline">Sign in</NuxtLink>
         </p>
       </div>
     </div>
@@ -62,45 +70,43 @@
 
 <script setup lang="ts">
 const supabase = useSupabaseClient()
-const router = useRouter()
 
+const fullName = ref('')
 const email = ref('')
 const password = ref('')
 const errorMsg = ref('')
-const loadingGoogle = ref(false)
-const loadingEmail = ref(false)
+const successMsg = ref('')
+const loading = ref(false)
 
-const signInWithGoogle = async () => {
-  loadingGoogle.value = true
-  errorMsg.value = ''
+const signUpWithGoogle = async () => {
   const { error } = await supabase.auth.signInWithOAuth({
     provider: 'google',
     options: {
       redirectTo: `${window.location.origin}/confirm`,
     },
   })
-  if (error) {
-    errorMsg.value = error.message
-    loadingGoogle.value = false
-  }
+  if (error) errorMsg.value = error.message
 }
 
-const signInWithEmail = async () => {
-  if (!email.value || !password.value) {
+const signUpWithEmail = async () => {
+  if (!email.value || !password.value || !fullName.value) {
     errorMsg.value = 'Please fill in all fields'
     return
   }
-  loadingEmail.value = true
+  loading.value = true
   errorMsg.value = ''
-  const { error } = await supabase.auth.signInWithPassword({
+  const { error } = await supabase.auth.signUp({
     email: email.value,
     password: password.value,
+    options: {
+      data: { full_name: fullName.value },
+    },
   })
   if (error) {
     errorMsg.value = error.message
   } else {
-    router.push('/dashboard')
+    successMsg.value = 'Check your email for a confirmation link!'
   }
-  loadingEmail.value = false
+  loading.value = false
 }
 </script>
