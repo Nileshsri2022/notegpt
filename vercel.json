@@ -1,0 +1,27 @@
+{
+  "buildCommand": "nuxt build",
+  "outputDirectory": ".output",
+  "devCommand": "nuxt dev",
+  "installCommand": "npm install",
+  "framework": "nuxt",
+  "regions": ["sfo1"],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

@@ -22,7 +22,7 @@ export default defineEventHandler(async (event) => {
 
     // Extract video title
     const titleMatch = pageHtml.match(/<title>(.*?)<\/title>/)
-    const title = titleMatch
+    const title = titleMatch?.[1]
       ? titleMatch[1].replace(' - YouTube', '').trim()
       : 'Untitled Video'
 
@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
       /var ytInitialPlayerResponse\s*=\s*({.+?})\s*;/
     )
 
-    if (!playerResponseMatch) {
+    if (!playerResponseMatch?.[1]) {
       throw createError({
         statusCode: 404,
         message: 'Could not extract video data. The video may be unavailable.',
@@ -49,8 +49,9 @@ export default defineEventHandler(async (event) => {
     }
 
     // Get video duration
-    const duration = playerResponse?.videoDetails?.lengthSeconds
-      ? formatDuration(parseInt(playerResponse.videoDetails.lengthSeconds))
+    const lengthSeconds = playerResponse?.videoDetails?.lengthSeconds
+    const duration = lengthSeconds
+      ? formatDuration(parseInt(lengthSeconds))
       : 'Unknown'
 
     // Get captions track URL
@@ -60,7 +61,7 @@ export default defineEventHandler(async (event) => {
     if (!captionTracks || captionTracks.length === 0) {
       throw createError({
         statusCode: 404,
-        message: 'No captions available for this video',
+        message: 'No captions available for this video. Try a video with subtitles enabled.',
       })
     }
 
@@ -69,7 +70,7 @@ export default defineEventHandler(async (event) => {
       (track: any) => track.languageCode === 'en' || track.languageCode?.startsWith('en')
     )
     const captionTrack = englishTrack || captionTracks[0]
-    const captionUrl = captionTrack.baseUrl
+    const captionUrl: string = captionTrack.baseUrl
 
     // Fetch captions XML
     const captionsXml = await $fetch<string>(captionUrl)
@@ -89,6 +90,7 @@ export default defineEventHandler(async (event) => {
       title,
       duration,
       videoId,
+      language: captionTrack.languageCode || 'en',
     }
   } catch (error: any) {
     if (error.statusCode) throw error
@@ -110,7 +112,7 @@ function extractVideoId(url: string): string | null {
 
   for (const pattern of patterns) {
     const match = url.match(pattern)
-    if (match) return match[1]
+    if (match?.[1]) return match[1]
   }
 
   // If it looks like just a video ID (11 chars)
@@ -136,9 +138,11 @@ function parseCaptionsXml(xml: string): string {
   const segments: string[] = []
 
   for (const match of textMatches) {
-    let text = match[1]
+    const rawText = match[1]
+    if (!rawText) continue
+
     // Decode HTML entities
-    text = text
+    const text = rawText
       .replace(/&amp;/g, '&')
       .replace(/&lt;/g, '<')
       .replace(/&gt;/g, '>')

@@ -38,7 +38,7 @@
       "source_file": "nuxt.config.ts",
       "source_location": "L1",
       "id": "nuxt_config_ts",
-      "community": 9,
+      "community": 12,
       "norm_label": "nuxt.config.ts"
     },
     {
@@ -47,7 +47,7 @@
       "source_file": "app/app.vue",
       "source_location": "L1",
       "id": "app_app_vue",
-      "community": 10,
+      "community": 13,
       "norm_label": "app.vue"
     },
     {
@@ -56,7 +56,7 @@
       "source_file": "app/components/AppFooter.vue",
       "source_location": "L1",
       "id": "app_components_appfooter_vue",
-      "community": 11,
+      "community": 14,
       "norm_label": "appfooter.vue"
     },
     {
@@ -65,7 +65,7 @@
       "source_file": "app/components/AppHeader.vue",
       "source_location": "L1",
       "id": "app_components_appheader_vue",
-      "community": 12,
+      "community": 15,
       "norm_label": "appheader.vue"
     },
     {
@@ -74,7 +74,7 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L1",
       "id": "app_components_appsidebar_vue",
-      "community": 4,
+      "community": 6,
       "norm_label": "appsidebar.vue"
     },
     {
@@ -83,7 +83,7 @@
       "source_file": "app/components/AppSidebar.vue",
       "source_location": "L105",
       "id": "components_appsidebar_togglecollapse",
-      "community": 4,
+      "community": 6,
       "norm_label": "togglecollapse()"
     },
     {
@@ -92,7 +92,7 @@
       "source_file": "app/components/CarouselBanner.vue",
       "source_location": "L1",
       "id": "app_components_carouselbanner_vue",
-      "community": 13,
+      "community": 16,
       "norm_label": "carouselbanner.vue"
     },
     {
@@ -101,7 +101,7 @@
       "source_file": "app/components/DashboardTopBar.vue",
       "source_location": "L1",
       "id": "app_components_dashboardtopbar_vue",
-      "community": 14,
+      "community": 17,
       "norm_label": "dashboardtopbar.vue"
     },
     {
@@ -110,7 +110,7 @@
       "source_file": "app/components/QuotaDisplay.vue",
       "source_location": "L1",
       "id": "app_components_quotadisplay_vue",
-      "community": 15,
+      "community": 18,
       "norm_label": "quotadisplay.vue"
     },
     {
@@ -119,8 +119,17 @@
       "source_file": "app/components/SidebarItem.vue",
       "source_location": "L1",
       "id": "app_components_sidebaritem_vue",
-      "community": 16,
+      "community": 19,
       "norm_label": "sidebaritem.vue"
+    },
+    {
+      "label": "ToolPageLayout.vue",
+      "file_type": "code",
+      "source_file": "app/components/ToolPageLayout.vue",
+      "source_location": "L1",
+      "id": "app_components_toolpagelayout_vue",
+      "community": 20,
+      "norm_label": "toolpagelayout.vue"
     },
     {
       "label": "ToolSubNav.vue",
@@ -128,7 +137,7 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L1",
       "id": "app_components_toolsubnav_vue",
-      "community": 5,
+      "community": 7,
       "norm_label": "toolsubnav.vue"
     },
     {
@@ -137,7 +146,7 @@
       "source_file": "app/components/ToolSubNav.vue",
       "source_location": "L92",
       "id": "components_toolsubnav_isactivetab",
-      "community": 5,
+      "community": 7,
       "norm_label": "isactivetab()"
     },
     {
@@ -146,7 +155,7 @@
       "source_file": "app/composables/useChat.ts",
       "source_location": "L1",
       "id": "app_composables_usechat_ts",
-      "community": 6,
+      "community": 8,
       "norm_label": "usechat.ts"
     },
     {
@@ -155,7 +164,7 @@
       "source_file": "app/composables/useChat.ts",
       "source_location": "L10",
       "id": "composables_usechat_usechat",
-      "community": 6,
+      "community": 8,
       "norm_label": "usechat()"
     },
     {
@@ -164,7 +173,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L1",
       "id": "app_composables_usenotes_ts",
-      "community": 7,
+      "community": 9,
       "norm_label": "usenotes.ts"
     },
     {
@@ -173,7 +182,7 @@
       "source_file": "app/composables/useNotes.ts",
       "source_location": "L3",
       "id": "composables_usenotes_usenotes",
-      "community": 7,
+      "community": 9,
       "norm_label": "usenotes()"
     },
     {
@@ -182,7 +191,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L1",
       "id": "app_composables_useprofile_ts",
-      "community": 8,
+      "community": 10,
       "norm_label": "useprofile.ts"
     },
     {
@@ -191,7 +200,7 @@
       "source_file": "app/composables/useProfile.ts",
       "source_location": "L3",
       "id": "composables_useprofile_useprofile",
-      "community": 8,
+      "community": 10,
       "norm_label": "useprofile()"
     },
     {
@@ -200,7 +209,7 @@
       "source_file": "app/layouts/dashboard.vue",
       "source_location": "L1",
       "id": "app_layouts_dashboard_vue",
-      "community": 17,
+      "community": 21,
       "norm_label": "dashboard.vue"
     },
     {
@@ -209,7 +218,7 @@
       "source_file": "app/layouts/default.vue",
       "source_location": "L1",
       "id": "app_layouts_default_vue",
-      "community": 18,
+      "community": 22,
       "norm_label": "default.vue"
     },
     {
@@ -218,7 +227,7 @@
       "source_file": "app/middleware/auth.ts",
       "source_location": "L1",
       "id": "app_middleware_auth_ts",
-      "community": 19,
+      "community": 23,
       "norm_label": "auth.ts"
     },
     {
@@ -227,7 +236,7 @@
       "source_file": "app/middleware/quota.ts",
       "source_location": "L1",
       "id": "app_middleware_quota_ts",
-      "community": 20,
+      "community": 24,
       "norm_label": "quota.ts"
     },
     {
@@ -236,8 +245,143 @@
       "source_file": "app/pages/ai-chat.vue",
       "source_location": "L1",
       "id": "app_pages_ai_chat_vue",
-      "community": 21,
+      "community": 25,
       "norm_label": "ai-chat.vue"
+    },
+    {
+      "label": "ai-detector.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-detector.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_detector_vue",
+      "community": 26,
+      "norm_label": "ai-detector.vue"
+    },
+    {
+      "label": "ai-flashcard-maker.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-flashcard-maker.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_flashcard_maker_vue",
+      "community": 27,
+      "norm_label": "ai-flashcard-maker.vue"
+    },
+    {
+      "label": "ai-image-generator.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-image-generator.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_image_generator_vue",
+      "community": 28,
+      "norm_label": "ai-image-generator.vue"
+    },
+    {
+      "label": "ai-math-solver.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-math-solver.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_math_solver_vue",
+      "community": 29,
+      "norm_label": "ai-math-solver.vue"
+    },
+    {
+      "label": "ai-mind-map-generator.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-mind-map-generator.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_mind_map_generator_vue",
+      "community": 11,
+      "norm_label": "ai-mind-map-generator.vue"
+    },
+    {
+      "label": "for()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-mind-map-generator.vue",
+      "source_location": "L181",
+      "id": "pages_ai_mind_map_generator_for",
+      "community": 11,
+      "norm_label": "for()"
+    },
+    {
+      "label": "ai-presentation-maker.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-presentation-maker.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_presentation_maker_vue",
+      "community": 30,
+      "norm_label": "ai-presentation-maker.vue"
+    },
+    {
+      "label": "ai-quiz-generator.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_quiz_generator_vue",
+      "community": 0,
+      "norm_label": "ai-quiz-generator.vue"
+    },
+    {
+      "label": "selectAnswer()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L236",
+      "id": "pages_ai_quiz_generator_selectanswer",
+      "community": 0,
+      "norm_label": "selectanswer()"
+    },
+    {
+      "label": "submitShortAnswer()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L245",
+      "id": "pages_ai_quiz_generator_submitshortanswer",
+      "community": 0,
+      "norm_label": "submitshortanswer()"
+    },
+    {
+      "label": "nextQuestion()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L255",
+      "id": "pages_ai_quiz_generator_nextquestion",
+      "community": 0,
+      "norm_label": "nextquestion()"
+    },
+    {
+      "label": "resetQuiz()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L267",
+      "id": "pages_ai_quiz_generator_resetquiz",
+      "community": 0,
+      "norm_label": "resetquiz()"
+    },
+    {
+      "label": "newQuiz()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L277",
+      "id": "pages_ai_quiz_generator_newquiz",
+      "community": 0,
+      "norm_label": "newquiz()"
+    },
+    {
+      "label": "generateQuiz()",
+      "file_type": "code",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L283",
+      "id": "pages_ai_quiz_generator_generatequiz",
+      "community": 0,
+      "norm_label": "generatequiz()"
+    },
+    {
+      "label": "ai-voice-generator.vue",
+      "file_type": "code",
+      "source_file": "app/pages/ai-voice-generator.vue",
+      "source_location": "L1",
+      "id": "app_pages_ai_voice_generator_vue",
+      "community": 31,
+      "norm_label": "ai-voice-generator.vue"
     },
     {
       "label": "confirm.vue",
@@ -245,7 +389,7 @@
       "source_file": "app/pages/confirm.vue",
       "source_location": "L1",
       "id": "app_pages_confirm_vue",
-      "community": 22,
+      "community": 32,
       "norm_label": "confirm.vue"
     },
     {
@@ -254,7 +398,7 @@
       "source_file": "app/pages/dashboard.vue",
       "source_location": "L1",
       "id": "app_pages_dashboard_vue",
-      "community": 23,
+      "community": 33,
       "norm_label": "dashboard.vue"
     },
     {
@@ -263,7 +407,7 @@
       "source_file": "app/pages/index.vue",
       "source_location": "L1",
       "id": "app_pages_index_vue",
-      "community": 24,
+      "community": 34,
       "norm_label": "index.vue"
     },
     {
@@ -272,7 +416,7 @@
       "source_file": "app/pages/login.vue",
       "source_location": "L1",
       "id": "app_pages_login_vue",
-      "community": 25,
+      "community": 35,
       "norm_label": "login.vue"
     },
     {
@@ -281,8 +425,35 @@
       "source_file": "app/pages/notes.vue",
       "source_location": "L1",
       "id": "app_pages_notes_vue",
-      "community": 26,
+      "community": 36,
       "norm_label": "notes.vue"
+    },
+    {
+      "label": "pdf-summary.vue",
+      "file_type": "code",
+      "source_file": "app/pages/pdf-summary.vue",
+      "source_location": "L1",
+      "id": "app_pages_pdf_summary_vue",
+      "community": 4,
+      "norm_label": "pdf-summary.vue"
+    },
+    {
+      "label": "saveToNotes()",
+      "file_type": "code",
+      "source_file": "app/pages/pdf-summary.vue",
+      "source_location": "L212",
+      "id": "pages_pdf_summary_savetonotes",
+      "community": 4,
+      "norm_label": "savetonotes()"
+    },
+    {
+      "label": "copyToClipboard()",
+      "file_type": "code",
+      "source_file": "app/pages/pdf-summary.vue",
+      "source_location": "L230",
+      "id": "pages_pdf_summary_copytoclipboard",
+      "community": 4,
+      "norm_label": "copytoclipboard()"
     },
     {
       "label": "pricing.vue",
@@ -290,7 +461,7 @@
       "source_file": "app/pages/pricing.vue",
       "source_location": "L1",
       "id": "app_pages_pricing_vue",
-      "community": 27,
+      "community": 37,
       "norm_label": "pricing.vue"
     },
     {
@@ -299,7 +470,7 @@
       "source_file": "app/pages/signup.vue",
       "source_location": "L1",
       "id": "app_pages_signup_vue",
-      "community": 28,
+      "community": 38,
       "norm_label": "signup.vue"
     },
     {
@@ -308,7 +479,7 @@
       "source_file": "app/pages/text-to-speech.vue",
       "source_location": "L1",
       "id": "app_pages_text_to_speech_vue",
-      "community": 29,
+      "community": 39,
       "norm_label": "text-to-speech.vue"
     },
     {
@@ -317,7 +488,7 @@
       "source_file": "app/pages/youtube-video-summarizer.vue",
       "source_location": "L1",
       "id": "app_pages_youtube_video_summarizer_vue",
-      "community": 30,
+      "community": 40,
       "norm_label": "youtube-video-summarizer.vue"
     },
     {
@@ -326,7 +497,7 @@
       "source_file": "app/types/database.types.ts",
       "source_location": "L1",
       "id": "app_types_database_types_ts",
-      "community": 31,
+      "community": 41,
       "norm_label": "database.types.ts"
     },
     {
@@ -335,8 +506,17 @@
       "source_file": "server/api/chat.post.ts",
       "source_location": "L1",
       "id": "server_api_chat_post_ts",
-      "community": 32,
+      "community": 42,
       "norm_label": "chat.post.ts"
+    },
+    {
+      "label": "detect.post.ts",
+      "file_type": "code",
+      "source_file": "server/api/detect.post.ts",
+      "source_location": "L1",
+      "id": "server_api_detect_post_ts",
+      "community": 43,
+      "norm_label": "detect.post.ts"
     },
     {
       "label": "summarize.post.ts",
@@ -344,7 +524,7 @@
       "source_file": "server/api/summarize.post.ts",
       "source_location": "L1",
       "id": "server_api_summarize_post_ts",
-      "community": 33,
+      "community": 44,
       "norm_label": "summarize.post.ts"
     },
     {
@@ -353,7 +533,7 @@
       "source_file": "server/api/tts.post.ts",
       "source_location": "L1",
       "id": "server_api_tts_post_ts",
-      "community": 34,
+      "community": 45,
       "norm_label": "tts.post.ts"
     },
     {
@@ -362,7 +542,7 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L1",
       "id": "server_api_youtube_transcript_post_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "transcript.post.ts"
     },
     {
@@ -371,7 +551,7 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L102",
       "id": "youtube_transcript_post_extractvideoid",
-      "community": 2,
+      "community": 3,
       "norm_label": "extractvideoid()"
     },
     {
@@ -380,7 +560,7 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L122",
       "id": "youtube_transcript_post_formatduration",
-      "community": 2,
+      "community": 3,
       "norm_label": "formatduration()"
     },
     {
@@ -389,7 +569,7 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L133",
       "id": "youtube_transcript_post_parsecaptionsxml",
-      "community": 2,
+      "community": 3,
       "norm_label": "parsecaptionsxml()"
     },
     {
@@ -401,7 +581,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "nuxt minimal starter",
       "id": "readme_nuxt_starter"
     },
@@ -414,7 +594,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "nuxt 3 framework",
       "id": "concept_nuxt_framework"
     },
@@ -427,7 +607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "supabase authentication",
       "id": "concept_supabase_auth"
     },
@@ -440,7 +620,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "youtube video summarizer",
       "id": "concept_youtube_summarizer"
     },
@@ -453,7 +633,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ai chat feature",
       "id": "concept_ai_chat"
     },
@@ -466,7 +646,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "text-to-speech feature",
       "id": "concept_text_to_speech"
     },
@@ -479,7 +659,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "notes management",
       "id": "concept_notes_management"
     },
@@ -492,7 +672,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "pricing & subscription",
       "id": "concept_pricing_model"
     },
@@ -505,7 +685,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "dashboard layout system",
       "id": "concept_dashboard_layout"
     },
@@ -518,7 +698,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ai chat live screenshot",
       "id": "img_ai_chat_live"
     },
@@ -531,7 +711,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 5,
       "norm_label": "homepage screenshot",
       "id": "img_homepage"
     },
@@ -544,7 +724,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "pricing page screenshot",
       "id": "img_pricing"
     },
@@ -557,7 +737,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "youtube summarizer screenshot",
       "id": "img_youtube_summarizer"
     },
@@ -570,7 +750,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "notes page screenshot",
       "id": "img_notes"
     },
@@ -583,7 +763,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "text-to-speech screenshot",
       "id": "img_tts"
     }
@@ -615,9 +795,9 @@
       "source_file": "app/composables/useChat.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_composables_usechat_ts",
-      "target": "composables_usechat_usechat",
-      "confidence_score": 1.0
+      "target": "composables_usechat_usechat"
     },
     {
       "relation": "contains",
@@ -642,12 +822,113 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-mind-map-generator.vue",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "app_pages_ai_mind_map_generator_vue",
+      "target": "pages_ai_mind_map_generator_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_selectanswer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_submitshortanswer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L255",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_nextquestion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_resetquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L277",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_newquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L283",
+      "weight": 1.0,
+      "source": "app_pages_ai_quiz_generator_vue",
+      "target": "pages_ai_quiz_generator_generatequiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/ai-quiz-generator.vue",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "pages_ai_quiz_generator_newquiz",
+      "target": "pages_ai_quiz_generator_resetquiz",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/pdf-summary.vue",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "app_pages_pdf_summary_vue",
+      "target": "pages_pdf_summary_savetonotes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/pages/pdf-summary.vue",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "app_pages_pdf_summary_vue",
+      "target": "pages_pdf_summary_copytoclipboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_api_youtube_transcript_post_ts",
-      "target": "youtube_transcript_post_extractvideoid",
-      "confidence_score": 1.0
+      "target": "youtube_transcript_post_extractvideoid"
     },
     {
       "relation": "contains",
@@ -655,9 +936,9 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_api_youtube_transcript_post_ts",
-      "target": "youtube_transcript_post_formatduration",
-      "confidence_score": 1.0
+      "target": "youtube_transcript_post_formatduration"
     },
     {
       "relation": "contains",
@@ -665,9 +946,9 @@
       "source_file": "server/api/youtube/transcript.post.ts",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "server_api_youtube_transcript_post_ts",
-      "target": "youtube_transcript_post_parsecaptionsxml",
-      "confidence_score": 1.0
+      "target": "youtube_transcript_post_parsecaptionsxml"
     },
     {
       "relation": "references",
@@ -818,5 +1099,5 @@
       "source_file": "app/pages/login.vue"
     }
   ],
-  "built_at_commit": "d96cbc794f5f4c2fc0b3c4c379859c5b4df0b75b"
+  "built_at_commit": "63fc59ccaf2d03f7b266141e0a60edd540801de3"
 }

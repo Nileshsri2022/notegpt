@@ -1,14 +1,21 @@
 <template>
   <div>
     <NuxtLayout name="dashboard">
+      <template #header>
+        <ToolSubNav
+          category="AI Voices"
+          :tabs="[
+            { label: 'Text to Speech', to: '/text-to-speech' },
+            { label: 'Voice Generator', to: '/ai-voice-generator' },
+            { label: 'Voice Cloning', to: '/ai-voice-cloning' },
+            { label: 'Podcast Generator', to: '/ai-podcast-generator' },
+          ]"
+        />
+      </template>
+
       <div class="max-w-4xl mx-auto">
         <!-- Header -->
         <div class="mb-6">
-          <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
-            <span>AI Voices</span>
-            <Icon name="heroicons:chevron-right" class="w-3 h-3" />
-            <span class="text-gray-900">Text to Speech</span>
-          </div>
           <h1 class="text-2xl font-bold text-gray-900">AI Text to Speech</h1>
           <p class="text-gray-600 mt-1">Convert text to natural-sounding speech powered by ElevenLabs.</p>
         </div>

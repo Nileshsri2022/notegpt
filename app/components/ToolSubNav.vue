@@ -1,58 +1,50 @@
 <template>
-  <div class="border-b border-gray-200">
-    <div class="flex items-center gap-4 px-4 py-2">
-      <!-- Category label -->
-      <span class="text-sm font-semibold text-gray-900 shrink-0">{{ category }}</span>
+  <div class="border-b border-gray-100 bg-white px-4 sm:px-6">
+    <div class="flex items-center justify-between">
+      <!-- Category label + sub-tabs -->
+      <div class="flex items-center gap-4 overflow-x-auto scrollbar-none">
+        <!-- Category label -->
+        <span class="text-sm font-semibold text-gray-900 whitespace-nowrap shrink-0">
+          {{ category }}
+        </span>
 
-      <!-- Sub-tab links -->
-      <div class="flex items-center gap-1 overflow-x-auto">
-        <NuxtLink
-          v-for="tab in visibleTabs"
-          :key="tab.to"
-          :to="tab.to"
-          class="px-3 py-1.5 rounded-md text-sm font-medium whitespace-nowrap transition-colors"
-          :class="isActiveTab(tab.to)
-            ? 'bg-primary-500/10 text-primary-500'
-            : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'"
-        >
-          {{ tab.label }}
-        </NuxtLink>
+        <!-- Sub-tabs -->
+        <nav class="flex items-center gap-1">
+          <NuxtLink
+            v-for="tab in tabs"
+            :key="tab.to"
+            :to="tab.to"
+            class="px-3 py-2.5 text-[13px] font-medium whitespace-nowrap rounded-md transition-colors relative"
+            :class="isActiveTab(tab.to)
+              ? 'text-[#2E83FB]'
+              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
+            "
+          >
+            {{ tab.label }}
+            <!-- Active underline -->
+            <span
+              v-if="isActiveTab(tab.to)"
+              class="absolute bottom-0 left-3 right-3 h-0.5 bg-[#2E83FB] rounded-full"
+            />
+          </NuxtLink>
+        </nav>
       </div>
 
-      <!-- More dropdown -->
-      <UDropdownMenu
-        v-if="hiddenTabs.length > 0"
-        :items="hiddenTabItems"
-      >
-        <UButton variant="ghost" size="xs" trailing-icon="i-heroicons-chevron-down" class="text-gray-500">
-          More
-        </UButton>
-      </UDropdownMenu>
+      <!-- Right side: quota display or extra links -->
+      <div v-if="$slots.right" class="shrink-0 ml-4">
+        <slot name="right" />
+      </div>
 
-      <!-- Spacer -->
-      <div class="flex-1" />
-
-      <!-- External link -->
-      <a
-        v-if="externalLink"
-        :href="externalLink.url"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center gap-1 text-sm text-primary-500 hover:text-primary-600 font-medium whitespace-nowrap"
-      >
-        {{ externalLink.label }}
-        <Icon name="heroicons:arrow-top-right-on-square" class="w-3.5 h-3.5" />
-      </a>
-
-      <!-- Separator + My Notes -->
-      <div class="h-4 w-px bg-gray-200" />
-      <NuxtLink
-        to="/notes"
-        class="flex items-center gap-1.5 text-sm text-gray-600 hover:text-gray-900 font-medium whitespace-nowrap"
-      >
-        <Icon name="heroicons:bookmark" class="w-4 h-4" />
-        My Notes
-      </NuxtLink>
+      <!-- Quota display -->
+      <div v-else-if="showQuota" class="shrink-0 ml-4 flex items-center gap-2">
+        <span class="text-xs text-gray-500">{{ quotaUsed }}/{{ quotaLimit }}</span>
+        <div class="w-16 h-1.5 bg-gray-200 rounded-full overflow-hidden">
+          <div
+            class="h-full bg-[#2E83FB] rounded-full transition-all duration-300"
+            :style="{ width: `${Math.min((quotaUsed / quotaLimit) * 100, 100)}%` }"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -63,33 +55,31 @@ interface Tab {
   to: string
 }
 
-interface ExternalLink {
-  label: string
-  url: string
-}
-
 const props = withDefaults(defineProps<{
   category: string
   tabs: Tab[]
-  externalLink?: ExternalLink
-  maxVisible?: number
+  showQuota?: boolean
+  quotaUsed?: number
+  quotaLimit?: number
 }>(), {
-  maxVisible: 4,
+  showQuota: false,
+  quotaUsed: 0,
+  quotaLimit: 10,
 })
 
 const route = useRoute()
-
-const visibleTabs = computed(() => props.tabs.slice(0, props.maxVisible))
-const hiddenTabs = computed(() => props.tabs.slice(props.maxVisible))
-
-const hiddenTabItems = computed(() =>
-  hiddenTabs.value.map(tab => ({
-    label: tab.label,
-    to: tab.to,
-  }))
-)
 
 function isActiveTab(to: string) {
   return route.path === to || route.path.startsWith(to + '/')
 }
 </script>
+
+<style scoped>
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+</style>

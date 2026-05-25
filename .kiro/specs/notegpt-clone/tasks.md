@@ -16,44 +16,44 @@ This plan covers the full implementation of the NoteGPT clone — a pixel-perfec
 - [x] 9. Set up Supabase database (profiles, notes, folders, conversations, messages, subscriptions, usage_logs)
 - [x] 10. Create composables (useProfile, useNotes)
 - [x] 11. Create server API routes (tts, chat, summarize)
-- [ ] 12. Match sidebar exactly to live site (icons, spacing, active states, collapse behavior)
-- [ ] 13. Match tool sub-navigation bar (category label, sub-tabs, quota display)
-- [ ] 14. Build CarouselBanner component (4 slides with auto-rotation)
-- [ ] 15. Match homepage logged-in view (greeting, search, tool tabs, carousel)
-- [ ] 16. Build QuotaDisplay component (basic | premium | upgrade)
-- [ ] 17. Match YouTube Summarizer page exactly (input types, sub-tabs, URL input, results area)
-- [ ] 18. Match AI Chat page exactly (model selector, chat bubbles, input area, quick tools)
-- [ ] 19. Match Text-to-Speech page exactly (voice selector, settings, audio player)
-- [ ] 20. Match My Notes page exactly (folder tree, note cards, filters, empty state)
-- [ ] 21. Match Pricing page exactly (tabs, cards, badges, countdown timer)
-- [ ] 22. Wire up YouTube transcript extraction (YouTube Data API)
-- [ ] 23. Wire up AI summarization with real OpenRouter calls
-- [ ] 24. Wire up AI Chat with conversation persistence
-- [ ] 25. Wire up Text-to-Speech with ElevenLabs (real audio generation)
-- [ ] 26. Wire up Notes CRUD with Supabase (create, read, update, delete, folders)
-- [ ] 27. Implement quota system (check before use, increment after use, display remaining)
-- [ ] 28. Add auth middleware (protect dashboard/tool routes)
-- [ ] 29. Build Save to Notes flow from tool results
-- [ ] 30. Build tool page template (reusable for all tools)
-- [ ] 31. PDF Summarizer page (file upload + summarize)
-- [ ] 32. AI Voice Generator page (voice selection + generation)
-- [ ] 33. AI Image Generator page (prompt input + image display)
-- [ ] 34. AI Detector page (text input + detection results)
-- [ ] 35. AI Flashcard Maker page (content input + flashcard display)
-- [ ] 36. AI Quiz Generator page (content input + quiz display)
-- [ ] 37. AI Presentation Maker page
-- [ ] 38. AI Mind Map Generator page
-- [ ] 39. AI Math Solver page
-- [ ] 40. Audio and Video Summarizer pages
-- [ ] 41. Create Stripe products and prices (Basic, Pro, Unlimited)
-- [ ] 42. Build checkout flow (pricing page to Stripe Checkout to success)
-- [ ] 43. Handle Stripe webhooks (subscription created/updated/canceled)
-- [ ] 44. Update user plan and quotas on successful payment
-- [ ] 45. Build subscription management page
-- [ ] 46. Add loading states and skeleton screens
-- [ ] 47. Add error handling and toast notifications
-- [ ] 48. SEO optimization (meta tags, OG images, structured data)
-- [ ] 49. Mobile responsive refinement
+- [x] 12. Match sidebar exactly to live site (icons, spacing, active states, collapse behavior)
+- [x] 13. Match tool sub-navigation bar (category label, sub-tabs, quota display)
+- [x] 14. Build CarouselBanner component (4 slides with auto-rotation)
+- [x] 15. Match homepage logged-in view (greeting, search, tool tabs, carousel)
+- [x] 16. Build QuotaDisplay component (basic | premium | upgrade)
+- [x] 17. Match YouTube Summarizer page exactly (input types, sub-tabs, URL input, results area)
+- [x] 18. Match AI Chat page exactly (model selector, chat bubbles, input area, quick tools)
+- [x] 19. Match Text-to-Speech page exactly (voice selector, settings, audio player)
+- [x] 20. Match My Notes page exactly (folder tree, note cards, filters, empty state)
+- [x] 21. Match Pricing page exactly (tabs, cards, badges, countdown timer)
+- [x] 22. Wire up YouTube transcript extraction (YouTube Data API)
+- [x] 23. Wire up AI summarization with real OpenRouter calls
+- [x] 24. Wire up AI Chat with conversation persistence
+- [x] 25. Wire up Text-to-Speech with ElevenLabs (real audio generation)
+- [x] 26. Wire up Notes CRUD with Supabase (create, read, update, delete, folders)
+- [x] 27. Implement quota system (check before use, increment after use, display remaining)
+- [x] 28. Add auth middleware (protect dashboard/tool routes)
+- [x] 29. Build Save to Notes flow from tool results
+- [x] 30. Build tool page template (reusable for all tools)
+- [x] 31. PDF Summarizer page (file upload + summarize)
+- [x] 32. AI Voice Generator page (voice selection + generation)
+- [x] 33. AI Image Generator page (prompt input + image display)
+- [x] 34. AI Detector page (text input + detection results)
+- [x] 35. AI Flashcard Maker page (content input + flashcard display)
+- [x] 36. AI Quiz Generator page (content input + quiz display)
+- [x] 37. AI Presentation Maker page
+- [x] 38. AI Mind Map Generator page
+- [x] 39. AI Math Solver page
+- [x] 40. Audio and Video Summarizer pages
+- [x] 41. Create Stripe products and prices (Basic, Pro, Unlimited)
+- [x] 42. Build checkout flow (pricing page to Stripe Checkout to success)
+- [x] 43. Handle Stripe webhooks (subscription created/updated/canceled)
+- [x] 44. Update user plan and quotas on successful payment
+- [x] 45. Build subscription management page
+- [x] 46. Add loading states and skeleton screens
+- [x] 47. Add error handling and toast notifications
+- [x] 48. SEO optimization (meta tags, OG images, structured data)
+- [x] 49. Mobile responsive refinement
 - [ ] 50. Deploy to Vercel
 - [ ] 51. Configure custom domain
 - [ ] 52. Final visual comparison with live site

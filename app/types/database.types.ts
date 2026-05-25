@@ -171,10 +171,13 @@ export type Database = {
           email: string | null
           full_name: string | null
           id: string
+          notes_count: number
           plan: string
           premium_credits_limit: number
           premium_credits_used: number
           quota_reset_at: string
+          stripe_customer_id: string | null
+          stripe_subscription_id: string | null
           updated_at: string
         }
         Insert: {
@@ -185,10 +188,13 @@ export type Database = {
           email?: string | null
           full_name?: string | null
           id: string
+          notes_count?: number
           plan?: string
           premium_credits_limit?: number
           premium_credits_used?: number
           quota_reset_at?: string
+          stripe_customer_id?: string | null
+          stripe_subscription_id?: string | null
           updated_at?: string
         }
         Update: {
@@ -203,6 +209,8 @@ export type Database = {
           premium_credits_limit?: number
           premium_credits_used?: number
           quota_reset_at?: string
+          stripe_customer_id?: string | null
+          stripe_subscription_id?: string | null
           updated_at?: string
         }
         Relationships: []

@@ -57,6 +57,8 @@
             block
             size="lg"
             class="mb-6"
+            :loading="checkoutLoading === plan.planId"
+            @click="handleCheckout(plan.planId)"
           >
             Get {{ plan.name }}
           </UButton>
@@ -86,7 +88,45 @@
 </template>
 
 <script setup lang="ts">
+const toast = useToast()
+const route = useRoute()
+const user = useSupabaseUser()
+
 const activeBilling = ref('annually')
+const checkoutLoading = ref<string | null>(null)
+
+// Show success/cancel messages from Stripe redirect
+onMounted(() => {
+  if (route.query.success) {
+    toast.add({ title: 'Payment Successful!', description: 'Your plan has been upgraded.', color: 'success' })
+  }
+  if (route.query.canceled) {
+    toast.add({ title: 'Payment Canceled', description: 'No charges were made.', color: 'warning' })
+  }
+})
+
+async function handleCheckout(planId: string) {
+  if (!user.value) {
+    navigateTo('/login')
+    return
+  }
+
+  checkoutLoading.value = planId
+  try {
+    const { url } = await $fetch('/api/stripe/checkout', {
+      method: 'POST',
+      body: {
+        planId,
+        interval: activeBilling.value === 'annually' ? 'yearly' : 'monthly',
+      },
+    })
+    if (url) window.location.href = url
+  } catch (err: any) {
+    toast.add({ title: 'Error', description: err.data?.message || 'Failed to start checkout.', color: 'error' })
+  } finally {
+    checkoutLoading.value = null
+  }
+}
 
 const billingTabs = [
   { id: 'annually', label: 'Annually', badge: 'Save 50%' },
@@ -99,6 +139,7 @@ const plansByBilling: Record<string, Array<any>> = {
   annually: [
     {
       name: 'Basic',
+      planId: 'basic',
       price: '25',
       monthlyEquiv: '2.08',
       save: '30%',
@@ -107,6 +148,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'Unlimited',
+      planId: 'unlimited',
       price: '174',
       monthlyEquiv: '14.5',
       save: '50%',
@@ -115,6 +157,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'Pro',
+      planId: 'pro',
       price: '108',
       monthlyEquiv: '9',
       save: '10%',
@@ -125,6 +168,7 @@ const plansByBilling: Record<string, Array<any>> = {
   monthly: [
     {
       name: 'Basic',
+      planId: 'basic',
       price: '2.99',
       save: null,
       popular: false,
@@ -132,6 +176,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'Unlimited',
+      planId: 'unlimited',
       price: '29',
       save: null,
       popular: true,
@@ -139,6 +184,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'Pro',
+      planId: 'pro',
       price: '9.99',
       save: null,
       popular: false,
@@ -148,6 +194,7 @@ const plansByBilling: Record<string, Array<any>> = {
   education: [
     {
       name: 'Student',
+      planId: 'basic',
       price: '15',
       monthlyEquiv: '1.25',
       save: '60%',
@@ -156,6 +203,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'School',
+      planId: 'unlimited',
       price: '99',
       monthlyEquiv: '8.25',
       save: '50%',
@@ -164,6 +212,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: 'Teacher',
+      planId: 'pro',
       price: '49',
       monthlyEquiv: '4.08',
       save: '40%',
@@ -174,6 +223,7 @@ const plansByBilling: Record<string, Array<any>> = {
   team: [
     {
       name: '3 People',
+      planId: 'basic',
       price: '45',
       monthlyEquiv: '3.75',
       save: '40%',
@@ -182,6 +232,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: '5 People',
+      planId: 'pro',
       price: '65',
       monthlyEquiv: '5.42',
       save: '55%',
@@ -190,6 +241,7 @@ const plansByBilling: Record<string, Array<any>> = {
     },
     {
       name: '10 People',
+      planId: 'unlimited',
       price: '110',
       monthlyEquiv: '9.17',
       save: '60%',

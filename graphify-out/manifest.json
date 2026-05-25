@@ -35,6 +35,10 @@
     "mtime": 1779693728.400196,
     "hash": "c5edc191694b2c1e839f59dbc7b1bcf6"
   },
+  "D:\\vscode_programs\\notegpt\\app\\components\\ToolPageLayout.vue": {
+    "mtime": 1779701234.2799351,
+    "hash": "33063f57c81b1d0775f2071746c8f43f"
+  },
   "D:\\vscode_programs\\notegpt\\app\\components\\ToolSubNav.vue": {
     "mtime": 1779694273.1366503,
     "hash": "b38b29219ef912d5d3d9aa3c8735853f"
@@ -71,6 +75,38 @@
     "mtime": 1779699247.6028073,
     "hash": "a1d4ec290c06cf66443ba27dec69e64b"
   },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-detector.vue": {
+    "mtime": 1779701379.549974,
+    "hash": "93176ca0865ff1c90142648f03d4f605"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-flashcard-maker.vue": {
+    "mtime": 1779701423.443319,
+    "hash": "a37b65ed20969656fde55d40f5fa4877"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-image-generator.vue": {
+    "mtime": 1779701331.040212,
+    "hash": "60302bf6ca4132851adc8b4ae8b38d77"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-math-solver.vue": {
+    "mtime": 1779701575.8440225,
+    "hash": "a8def1e573f7c4dc24b6018fc97cb131"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-mind-map-generator.vue": {
+    "mtime": 1779701543.732446,
+    "hash": "f9ba9eafb91c555cb4a300e24ad86da6"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-presentation-maker.vue": {
+    "mtime": 1779701509.359012,
+    "hash": "93457e6e231ffaa8ccc0a9ab8c637c63"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-quiz-generator.vue": {
+    "mtime": 1779701473.0622447,
+    "hash": "fc1226bd3372cac1771c927d47f7c04d"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\ai-voice-generator.vue": {
+    "mtime": 1779701309.5176122,
+    "hash": "544a8abba312880e6d3b53eb1405b8c5"
+  },
   "D:\\vscode_programs\\notegpt\\app\\pages\\confirm.vue": {
     "mtime": 1779689413.5511017,
     "hash": "fcb031a4d9da092c415c6b7e06667732"
@@ -90,6 +126,10 @@
   "D:\\vscode_programs\\notegpt\\app\\pages\\notes.vue": {
     "mtime": 1779699283.9616508,
     "hash": "a1809ff6d6d0f859848152203ddaa5ab"
+  },
+  "D:\\vscode_programs\\notegpt\\app\\pages\\pdf-summary.vue": {
+    "mtime": 1779701274.7880719,
+    "hash": "58173cbfcb670799cf159cf97b6b8192"
   },
   "D:\\vscode_programs\\notegpt\\app\\pages\\pricing.vue": {
     "mtime": 1779687372.0967581,
@@ -114,6 +154,10 @@
   "D:\\vscode_programs\\notegpt\\server\\api\\chat.post.ts": {
     "mtime": 1779687510.7428062,
     "hash": "44eb10e1585026955f69ee3a704b63af"
+  },
+  "D:\\vscode_programs\\notegpt\\server\\api\\detect.post.ts": {
+    "mtime": 1779701349.723451,
+    "hash": "d0bb72bf6b1765ff371b7945a8c24d4d"
   },
   "D:\\vscode_programs\\notegpt\\server\\api\\summarize.post.ts": {
     "mtime": 1779687515.6307373,

@@ -6,8 +6,21 @@
         <ToolSubNav
           :category="category"
           :tabs="tabs"
-          :external-link="externalLink"
-        />
+          :show-quota="true"
+          :quota-used="10 - remainingQuota"
+          :quota-limit="10"
+        >
+          <template v-if="externalLink" #right>
+            <a
+              :href="externalLink.url"
+              target="_blank"
+              class="text-xs text-[#2E83FB] hover:underline flex items-center gap-1"
+            >
+              {{ externalLink.label }}
+              <Icon name="heroicons:arrow-top-right-on-square" class="w-3 h-3" />
+            </a>
+          </template>
+        </ToolSubNav>
       </template>
 
       <div class="max-w-4xl mx-auto">
@@ -17,7 +30,6 @@
             <h1 class="text-2xl font-bold text-gray-900">{{ title }}</h1>
             <p v-if="description" class="text-gray-600 mt-1">{{ description }}</p>
           </div>
-          <QuotaDisplay :basic="remainingQuota" :premium="remainingPremiumQuota" />
         </div>
 
         <!-- Main Content Slot -->
@@ -49,5 +61,5 @@ withDefaults(defineProps<{
   categoryIcon: 'heroicons:sparkles',
 })
 
-const { remainingQuota, remainingPremiumQuota } = useProfile()
+const { remainingQuota } = useProfile()
 </script>

@@ -37,3 +37,5 @@ logs
 
 # Kiro settings (contains API keys)
 .kiro/settings/
+
+.vercel
