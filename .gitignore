@@ -34,3 +34,6 @@ logs
 
 # RTFM
 .rtfm
+
+# Kiro settings (contains API keys)
+.kiro/settings/
