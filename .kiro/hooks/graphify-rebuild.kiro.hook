@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Graphify Auto-Rebuild",
+  "description": "Automatically rebuilds the graphify knowledge graph when source files are edited, ensuring the graph stays up-to-date with the latest code changes. Runs graphify update which only re-extracts changed files (AST-only, no API cost).",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.js",
+      "**/*.css"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "graphify update . --no-cluster",
+    "timeout": 30
+  }
+}

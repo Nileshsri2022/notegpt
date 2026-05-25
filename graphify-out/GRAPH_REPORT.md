@@ -1,23 +1,23 @@
 # Graph Report - notegpt  (2026-05-25)
 
 ## Corpus Check
-- 28 files · ~57,449 words
+- 32 files · ~59,719 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 47 nodes · 16 edges · 3 communities detected
-- Extraction: 62% EXTRACTED · 38% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
+- 55 nodes · 20 edges · 3 communities detected
+- Extraction: 70% EXTRACTED · 30% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `af317f6d`
+- Built from commit: `d96cbc79`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
 - [[_COMMUNITY_Community 1|Community 1]]
-- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Notes Management` - 4 edges
@@ -47,17 +47,17 @@
 - **AI-Powered Features** — concept_youtube_summarizer, concept_ai_chat, concept_text_to_speech [INFERRED 0.85]
 - **Authentication Flow** — concept_supabase_auth, concept_dashboard_layout, concept_notes_management [INFERRED 0.80]
 
-## Communities (31 total, 0 thin omitted)
+## Communities (35 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.33
-Nodes (6): AI Chat Feature, Text-to-Speech Feature, YouTube Video Summarizer, AI Chat Live Screenshot, Text-to-Speech Screenshot, YouTube Summarizer Screenshot
+Nodes (6): Dashboard Layout System, Notes Management, Pricing & Subscription, Supabase Authentication, Notes Page Screenshot, Pricing Page Screenshot
 
 ### Community 1 - "Community 1"
 Cohesion: 0.33
-Nodes (6): Dashboard Layout System, Notes Management, Pricing & Subscription, Supabase Authentication, Notes Page Screenshot, Pricing Page Screenshot
+Nodes (6): AI Chat Feature, Text-to-Speech Feature, YouTube Video Summarizer, AI Chat Live Screenshot, Text-to-Speech Screenshot, YouTube Summarizer Screenshot
 
-### Community 2 - "Community 2"
+### Community 3 - "Community 3"
 Cohesion: 0.67
 Nodes (3): Nuxt 3 Framework, Homepage Screenshot, Nuxt Minimal Starter
 

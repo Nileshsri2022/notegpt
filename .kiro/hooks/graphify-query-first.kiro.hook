@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Graphify Query-First",
+  "description": "Before reading files or searching the codebase, consult the graphify knowledge graph first. The graph at graphify-out/ contains a pre-built map of all code relationships, god nodes, communities, and surprising connections — making searches faster and more accurate than grepping raw files.",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": []
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "IMPORTANT: This project has a graphify knowledge graph at graphify-out/. Before reading files or searching the codebase, USE THE GRAPH FIRST for faster, cheaper, and more accurate results.\\n\\n## GRAPH-FIRST RULES:\\n\\n### Instead of grep/search/find, use:\\n- `graphify query \\\"<your question>\\\"` — natural language query against the graph\\n- `graphify path \\\"NodeA\\\" \\\"NodeB\\\"` — find how two concepts connect\\n- `graphify explain \\\"ComponentName\\\"` — get context about a specific entity\\n- Read `graphify-out/GRAPH_REPORT.md` — for architecture overview, god nodes, communities\\n- Read `graphify-out/graph.json` — for full structured graph data\\n\\n### When to use the graph:\\n- Understanding how components relate to each other\\n- Finding what depends on or calls a function/component\\n- Tracing data flow between modules\\n- Understanding the architecture or structure\\n- Finding where a concept is used across the codebase\\n- Answering \\\"what connects X to Y?\\\"\\n\\n### When to fall back to direct file reading:\\n- You need the exact current content of a specific file (implementation details)\\n- You're writing/editing code and need the precise current state\\n- The graph doesn't have the answer (it covers structure, not line-by-line content)\\n- You need to verify something the graph reported\\n\\n### Available graph data:\\n- `graphify-out/GRAPH_REPORT.md` — God nodes, surprising connections, communities, suggested questions\\n- `graphify-out/graph.json` — Full node/edge data (queryable)\\n- `graphify-out/graph.html` — Visual interactive graph (for user)\\n\\n## ACTION:\\nIf this tool call is a search/grep/find operation looking for code relationships or architecture understanding, consider using `graphify query` instead. If you need exact file content for editing, proceed with the original tool call.\"\n<parameter name=\"toolTypes\">read"
+  }
+}
